@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -31,6 +32,7 @@
         </a>
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       </div>
+      <div class="page-header__poster"></div>
     </header>
 
     <main class="page-main">
@@ -39,13 +41,13 @@
         <div class="multimedia__wrapper">
           <h2 class="multimedia__title">Фото и видео</h2>
           <div class="multimedia__photo">
-            <p class="multimedia__text"></p>
+            <p class="multimedia__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
             <div class="multimedia__photo-wrapper">
               <ul class="multimedia__photo-list photo-list">
                 <li class="photo-list__item">
                   <figure class="photo-list__item-container">
-                    <p>
-                      <img class="multimedia__image" src="http://placehold.it/150x100" alt="Неродные просторы"/>
+                    <p class="multimedia__image-container">
+                      <img class="multimedia__image" src="./img/photo-sunset-mobile@1x.jpg" width="320" height="260" alt="Неродные просторы"/>
                     </p>
                     <figcaption class="multimedia__photo-description">
                       <b class="multimedia__photo-title">Неродные просторы</b>
@@ -59,8 +61,8 @@
                 </li>
                 <li class="photo-list__item">
                   <figure class="photo-list__item-container">
-                    <p>
-                      <img class="multimedia__image" src="http://placehold.it/150x100" alt="Местная растительность"/>
+                    <p class="multimedia__image-container">
+                      <img class="multimedia__image" src="./img/photo-cactus-mobile@1x.jpg" width="320" height="260" alt="Местная растительность"/>
                     </p>
                     <figcaption class="multimedia__photo-description">
                       <b class="multimedia__photo-title">Местная растительность</b>
@@ -74,8 +76,8 @@
                 </li>
                 <li class="photo-list__item">
                   <figure class="photo-list__item-container">
-                    <p>
-                      <img class="multimedia__image" src="http://placehold.it/150x100" alt="Дорога на север"/>
+                    <p class="multimedia__image-container">
+                      <img class="multimedia__image" src="./img/photo-roads-mobile@1x.jpg" width="320" height="260" alt="Дорога на север"/>
                     </p>
                     <figcaption class="multimedia__photo-description">
                       <b class="multimedia__photo-title">Дорога на север</b>
@@ -89,8 +91,8 @@
                 </li>
                 <li class="photo-list__item">
                   <figure class="photo-list__item-container">
-                    <p>
-                      <img class="multimedia__image" src="http://placehold.it/150x100" alt="Мост дьявола"/>
+                    <p class="multimedia__image-container">
+                      <img class="multimedia__image" src="./img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола"/>
                     </p>
                     <figcaption class="multimedia__photo-description">
                       <b class="multimedia__photo-title">Мост дьявола</b>
@@ -112,7 +114,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <h2>#visitsedona</h2>
+        <h2 class="page-footer__hashtag">#visitsedona</h2>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
