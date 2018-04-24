@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -11,24 +14,24 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>Главная</a>
+              <a class="main-nav__link" href="#">Главная</a>
               <button class="exit-button site-list__button" type="button" aria-label="Выход"></button>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+            <li class="site-list__item photo">
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
         </div>
       </nav>
       <div class="page-header__top-menu">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="http://placehold.it/150x100" width="108" height="87" alt="Городок Седона">
+          <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="104" height="85" alt="Городок Седона">
         </a>
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       </div>
@@ -45,64 +48,75 @@
             <div class="multimedia__photo-wrapper">
               <ul class="multimedia__photo-list photo-list">
                 <li class="photo-list__item">
-                  <figure class="photo-list__item-container">
+                  <figure class="photo-list__item-container item1">
                     <p class="multimedia__image-container">
-                      <img class="multimedia__image" src="./img/photo-sunset-mobile@1x.jpg" width="320" height="260" alt="Неродные просторы"/>
+                      <img class="multimedia__image1" src="./img/photo-sunset-mobile@1x.jpg" width="320" height="260" alt="Неродные просторы"/>
                     </p>
                     <figcaption class="multimedia__photo-description">
-                      <b class="multimedia__photo-title">Неродные просторы</b>
-                      <p class="multimedia__photo-author">Автор фото: Борис</p>
+                      <div class="photo-description__container">
+                        <b class="multimedia__photo-title">Неродные просторы</b>
+                        <p class="multimedia__photo-author">Автор фото: Борис</p>
+                      </div>
+                      <div class="photo-list__rating item-rating">
+                        <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
+                        <b class="item-rating__number">1350</b>
+                      </div>
                     </figcaption>
                   </figure>
-                  <div class="photo-list__rating item-rating">
-                    <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
-                    <b class="item-rating__number">1350</b>
-                  </div>
                 </li>
+              </ul>
+              <ul class="multimedia__photo-list photo-list other-photo">
                 <li class="photo-list__item">
-                  <figure class="photo-list__item-container">
+                  <figure class="photo-list__item-container other-items">
                     <p class="multimedia__image-container">
                       <img class="multimedia__image" src="./img/photo-cactus-mobile@1x.jpg" width="320" height="260" alt="Местная растительность"/>
                     </p>
                     <figcaption class="multimedia__photo-description">
-                      <b class="multimedia__photo-title">Местная растительность</b>
-                      <p class="multimedia__photo-author">Автор фото: Сергей</p>
+                      <div class="photo-description__container">
+                        <b class="multimedia__photo-title">Местная растительность</b>
+                        <p class="multimedia__photo-author">Автор фото: Сергей</p>
+                      </div>
+                      <div class="photo-list__rating item-rating \">
+                        <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
+                        <b class="item-rating__number">143</b>
+                      </div>
                     </figcaption>
                   </figure>
-                  <div class="photo-list__rating item-rating">
-                    <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
-                    <b class="item-rating__number">143</b>
-                  </div>
                 </li>
                 <li class="photo-list__item">
-                  <figure class="photo-list__item-container">
+                  <figure class="photo-list__item-container other-items">
                     <p class="multimedia__image-container">
                       <img class="multimedia__image" src="./img/photo-roads-mobile@1x.jpg" width="320" height="260" alt="Дорога на север"/>
                     </p>
                     <figcaption class="multimedia__photo-description">
-                      <b class="multimedia__photo-title">Дорога на север</b>
-                      <p class="multimedia__photo-author">Автор фото: Петр</p>
+                      <div class="photo-description__container">
+                        <b class="multimedia__photo-title">Дорога на север</b>
+                        <p class="multimedia__photo-author">Автор фото: Петр</p>
+                      </div>
+                      <div class="photo-list__rating item-rating">
+                        <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
+                        <b class="item-rating__number">96</b>
+                      </div>
                     </figcaption>
                   </figure>
-                  <div class="photo-list__rating item-rating">
-                    <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
-                    <b class="item-rating__number">96</b>
-                  </div>
                 </li>
                 <li class="photo-list__item">
-                  <figure class="photo-list__item-container">
+                  <figure class="photo-list__item-container other-items">
                     <p class="multimedia__image-container">
                       <img class="multimedia__image" src="./img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола"/>
                     </p>
                     <figcaption class="multimedia__photo-description">
-                      <b class="multimedia__photo-title">Мост дьявола</b>
-                      <p class="multimedia__photo-author">Автор фото: Антон</p>
+                      <div class="photo-description__container">
+                        <b class="multimedia__photo-title">Мост дьявола</b>
+                        <p class="multimedia__photo-author">Автор фото: Антон</p>
+                      </div>
+                      <div class="photo-list__rating item-rating">
+                        <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
+                        <b class="item-rating__number">254</b>
+                      </div>
                     </figcaption>
                   </figure>
-                  <div class="photo-list__rating item-rating">
-                    <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
-                    <b class="item-rating__number">254</b>
-                  </div>
+
                 </li>
               </ul>
             </div>
@@ -110,7 +124,6 @@
         </div>
       </section>
     </main>
-
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
