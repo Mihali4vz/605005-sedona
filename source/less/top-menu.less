@@ -1,3 +1,27 @@
 .page-header__top-menu {
+  min-height: 57px;
   background-color: @main-backcolor;
+}
+
+.page-header__logo-image {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 224px;
+  z-index: 10;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__top-menu {
+    min-height: 0;
+  }
+
+  .page-header__logo-image {
+    top: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }
