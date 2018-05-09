@@ -1,8 +1,3 @@
-.main-nav {
-  width: 320px;
-  margin: 0 auto;
-}
-
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
@@ -22,7 +17,31 @@
   line-height: @title-height;
   color: @nav-color;
   background-color: @nav-backcolor;
+  box-shadow:
+  inset 0 -1px 0 0 #678fa8,
+  inset 0 1px 0 0 #9ac2db;
   list-style: none;
+}
+
+.site-list__item:last-child {
+  box-shadow: inset 0 -4px 10px -3px rgba(0, 0, 0, 0.3);
+}
+
+.main-item {
+  box-shadow: none;
+  box-shadow: inset 0 -1px 0 0 #678fa8;
+  position: relative;
+}
+
+.exit-button {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 23px;
+  background-image: url('../img/icon-cross.svg');
+  background-color: transparent;
+  border: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -50,8 +69,13 @@
     font-weight: @title-weight;
     line-height: @text-height;
     color: @title-color;
+    box-shadow: none;
     background-color: @main-backcolor;
     list-style: none;
+  }
+
+  .site-list__item:last-child {
+    box-shadow: none;
   }
 
   .exit-button {
@@ -67,5 +91,30 @@
   .main-nav {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .main-nav__wrapper {
+    display: none;
+  }
+
+  .photo-nav__wrapper {
+    display: flex;
+  }
+
+  .photo-nav__wrapper::before {
+    content: "";
+    position: absolute;
+    top: -105px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transform-origin: 50% 50%;
+    transform: rotate(-45deg);
+    width: 0;
+    height: 0;
+    border: 85px solid #81b3d2;
+    border-bottom-left-radius: 10px;
+
+
   }
 }

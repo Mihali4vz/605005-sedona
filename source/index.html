@@ -14,7 +14,7 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item main-item">
               <a class="main-nav__link" href="#">Главная</a>
               <button class="exit-button site-list__button" type="button" aria-label="Выход"></button>
             </li>
@@ -36,7 +36,6 @@
         </a>
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       </div>
-      <div class="page-header__poster"></div>
     </header>
 
     <main class="page-main">
@@ -51,15 +50,15 @@
           <ul class="reasons__list advantage-list">
             <li class="advantage-list__item">
               <div class="advantage-list__item-container reasons-city">
-                <div class="advantage-list__item-wrapper main-reasons">
-                  <h3 class="main-reasons__title">Настоящий городок</h3>
-                  <p class="main-reasons__text">-№1-</p>
+                <div class="advantage-list__item-wrapper main-reasons true-town">
+                  <h3 class="main-reasons__title true-town__title">Настоящий городок</h3>
+                  <p class="main-reasons__number">- №1 -</p>
                   <p class="main-reasons__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
               </div>
               <ul class="main-reason">
                 <li class="main-reason__features habit-feature">
-                  <h3 class="main-reason__title feature-title">Жилье</h3>
+                  <h3 class="main-reason__title feature-title ">Жилье</h3>
                   <p class="main-reason__text text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
                 <li class="main-reason__features souvenir-feature">
@@ -76,7 +75,7 @@
               <div class="advantage-list__item-container reasons-bridge bridge-container">
                 <div class="advantage-list__item-wrapper main-reasons">
                   <h3 class="main-reasons__title">Там есть мост дьявола</h3>
-                  <p class="main-reasons__text">-№2-</p>
+                  <p class="main-reasons__number">- №2 -</p>
                   <p class="main-reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
               </div>
@@ -87,21 +86,21 @@
               <li class="advantage-list__item another-list__item">
                 <div class="advantage-list__item-wrapper addl-reasons">
                   <h3 class="addl-reasons__title">Небольшая площадь</h3>
-                  <p class="text number">-№3-</p>
+                  <p class="text number">- №3 -</p>
                   <p class="addl-reasons__text text">Все интересные места находятся очень близко</p>
                 </div>
               </li>
               <li class="advantage-list__item another-list__item">
                 <div class="advantage-list__item-wrapper addl-reasons">
                   <h3 class="addl-reasons__title">Красивая дорога</h3>
-                  <p class="text number">-№4-</p>
+                  <p class="text number">- №4 -</p>
                   <p class="addl-reasons__text text">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
                 </div>
               </li>
               <li class="advantage-list__item another-list__item">
-                <div class="advantage-list__item-wrapper addl-reasons">
+                <div class="advantage-list__item-wrapper addl-reasons tourist-few">
                   <h3 class="addl-reasons__title">Мало туристов</h3>
-                  <p class="text number">-№5-</p>
+                  <p class="text number">- №5 -</p>
                   <p class="addl-reasons__text text">Большинство едет в Гранд каньон и толпится там</p>
                 </div>
               </li>
@@ -109,6 +108,16 @@
           </ul>
         </div>
       </section>
+      <div class="hotel-search">
+        <div class="hotel-search__wrapper">
+          <b class="hotel-search__title">Заинтересовались?</b>
+          <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="hotel-search__button" href="#">Найти гостиницу</a>
+        </div>
+        <div class="map-wrapper">
+          <a class="hotel-search__map" href="#"><img class="map-image" src="./img/bg-map-mobile@1x.jpg" alt="Карта" width="320" height="350"></a>
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -116,19 +125,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link--twitter" href="#">Мы в твиттере</a>
+              <a class="social-links social__link--twitter" href="#"><span class="visually-hidden">Мы в твиттере</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link--facebook" href="#">Мы в фэйсбуке</a>
+              <a class="social-links social__link--facebook" href="#"><span class="visually-hidden">Мы в фэйсбуке</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link--youtube" href="#">Мы в ютубе</a>
+              <a class="social-links social__link--youtube" href="#"><span class="visually-hidden">Мы в youtube</span></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Html Academy</span></a>
         </div>
       </div>
     </footer>
