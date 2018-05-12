@@ -12,7 +12,7 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper photo-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item main-item">
               <a class="main-nav__link" href="#">Главная</a>
@@ -28,13 +28,14 @@
               <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="104" height="85" alt="Городок Седона">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
       </nav>
-      <div class="page-header__top-menu">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="104" height="85" alt="Городок Седона">
-        </a>
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <div class="page-header__top">
+        <img class="main__sedona-text" src="./img/text-sedona-index.svg" alt="Sedona" width="460" height="350">
       </div>
     </header>
 
@@ -63,11 +64,11 @@
                 </li>
                 <li class="main-reason__features souvenir-feature">
                   <h3 class="main-reason__title feature-title">Сувениры</h3>
-                  <p class="main-reason__text text">Не только китайского, но и местного производства!</p>
+                  <p class="main-reason__text souvenir-text text">Не только китайского, но и местного производства!</p>
                 </li>
                 <li class="main-reason__features food-feature">
                   <h3 class="main-reason__title feature-title">Еда</h3>
-                  <p class="main-reason__text text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  <p class="main-reason__text text food-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
@@ -76,7 +77,7 @@
                 <div class="advantage-list__item-wrapper main-reasons">
                   <h3 class="main-reasons__title">Там есть мост дьявола</h3>
                   <p class="main-reasons__number">- №2 -</p>
-                  <p class="main-reasons__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  <p class="main-reasons__text devil-bridge__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
               </div>
             </li>
@@ -87,7 +88,7 @@
                 <div class="advantage-list__item-wrapper addl-reasons">
                   <h3 class="addl-reasons__title">Небольшая площадь</h3>
                   <p class="text number">- №3 -</p>
-                  <p class="addl-reasons__text text">Все интересные места находятся очень близко</p>
+                  <p class="addl-reasons__text places-text text">Все интересные места находятся очень близко</p>
                 </div>
               </li>
               <li class="advantage-list__item another-list__item">
@@ -111,7 +112,7 @@
       <div class="hotel-search">
         <div class="hotel-search__wrapper">
           <b class="hotel-search__title">Заинтересовались?</b>
-          <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="hotel-search__text">Укажите предполагаемые даты поездки, <span class="search-text__part">и мы покажем вам лучшие предложения гостиниц в Седоне</span></p>
           <a class="hotel-search__button" href="#">Найти гостиницу</a>
         </div>
         <div class="map-wrapper">
