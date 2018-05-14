@@ -5,15 +5,16 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper photo-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item main-item">
               <a class="main-nav__link" href="#">Главная</a>
               <button class="exit-button site-list__button" type="button" aria-label="Выход"></button>
             </li>
@@ -27,15 +28,15 @@
               <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image photo__logo-image" src="./img/logo-sedona-mobile.svg" width="104" height="85" alt="Городок Седона">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
       </nav>
-      <div class="page-header__top-menu">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="104" height="85" alt="Городок Седона">
-        </a>
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <div class="page-header__top top__photo">
+        <img class="photo__sedona-text" src="./img/text-sedona.svg" alt="Sedona" width="460" height="80">
       </div>
-      <div class="page-header__poster"></div>
     </header>
 
     <main class="page-main">
@@ -52,13 +53,15 @@
                     <p class="multimedia__image-container">
                       <img class="multimedia__image1" src="./img/photo-sunset-mobile@1x.jpg" width="320" height="260" alt="Неродные просторы"/>
                     </p>
-                    <figcaption class="multimedia__photo-description">
+                    <figcaption class="multimedia__photo-description main-description">
                       <div class="photo-description__container">
                         <b class="multimedia__photo-title">Неродные просторы</b>
                         <p class="multimedia__photo-author">Автор фото: Борис</p>
                       </div>
                       <div class="photo-list__rating item-rating">
-                        <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
+                        <button class="item-rating__button button" type="button" aria-label="Оценить фото">
+                          <svg class="item-rating__picture" fill="#b2b2b2" xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                        </button>
                         <b class="item-rating__number">1350</b>
                       </div>
                     </figcaption>
@@ -66,60 +69,70 @@
                 </li>
               </ul>
               <ul class="multimedia__photo-list photo-list other-photo">
-                <li class="photo-list__item">
-                  <figure class="photo-list__item-container other-items">
+                <li class="photo-list__item less-item">
+                  <figure class="photo-list__item-container">
                     <p class="multimedia__image-container">
-                      <img class="multimedia__image" src="./img/photo-cactus-mobile@1x.jpg" width="320" height="260" alt="Местная растительность"/>
+                      <img class="multimedia__image other-items" src="./img/photo-cactus-mobile@1x.jpg" width="320" height="260" alt="Местная растительность"/>
                     </p>
-                    <figcaption class="multimedia__photo-description">
+                    <figcaption class="multimedia__photo-description less-description">
                       <div class="photo-description__container">
                         <b class="multimedia__photo-title">Местная растительность</b>
                         <p class="multimedia__photo-author">Автор фото: Сергей</p>
                       </div>
                       <div class="photo-list__rating item-rating \">
-                        <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
+                        <button class="item-rating__button button" type="button" aria-label="Оценить фото">
+                          <svg class="item-rating__picture" fill="#b2b2b2" xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                        </button>
                         <b class="item-rating__number">143</b>
                       </div>
                     </figcaption>
                   </figure>
                 </li>
-                <li class="photo-list__item">
-                  <figure class="photo-list__item-container other-items">
+                <li class="photo-list__item less-item">
+                  <figure class="photo-list__item-container">
                     <p class="multimedia__image-container">
-                      <img class="multimedia__image" src="./img/photo-roads-mobile@1x.jpg" width="320" height="260" alt="Дорога на север"/>
+                      <img class="multimedia__image other-items" src="./img/photo-roads-mobile@1x.jpg" width="320" height="260" alt="Дорога на север"/>
                     </p>
-                    <figcaption class="multimedia__photo-description">
+                    <figcaption class="multimedia__photo-description less-description north-road__description">
                       <div class="photo-description__container">
                         <b class="multimedia__photo-title">Дорога на север</b>
                         <p class="multimedia__photo-author">Автор фото: Петр</p>
                       </div>
                       <div class="photo-list__rating item-rating">
-                        <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
+                        <button class="item-rating__button button" type="button" aria-label="Оценить фото">
+                          <svg class="item-rating__picture" fill="#b2b2b2" xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                        </button>
                         <b class="item-rating__number">96</b>
                       </div>
                     </figcaption>
                   </figure>
                 </li>
-                <li class="photo-list__item">
-                  <figure class="photo-list__item-container other-items">
+                <li class="photo-list__item less-item">
+                  <figure class="photo-list__item-container">
                     <p class="multimedia__image-container">
-                      <img class="multimedia__image" src="./img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола"/>
+                      <img class="multimedia__image other-items" src="./img/photo-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола"/>
                     </p>
-                    <figcaption class="multimedia__photo-description">
+                    <figcaption class="multimedia__photo-description less-description devil-bridge__description">
                       <div class="photo-description__container">
                         <b class="multimedia__photo-title">Мост дьявола</b>
                         <p class="multimedia__photo-author">Автор фото: Антон</p>
                       </div>
                       <div class="photo-list__rating item-rating">
-                        <button class="item-rating__button button" type="button" aria-label="Оценить фото"></button>
+                        <button class="item-rating__button button" type="button" aria-label="Оценить фото">
+                          <svg class="item-rating__picture" fill="#b2b2b2" xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                        </button>
                         <b class="item-rating__number">254</b>
                       </div>
                     </figcaption>
                   </figure>
-
                 </li>
               </ul>
             </div>
+          </div>
+          <div class="multimedia__video">
+              <b class="multimedia__title video-title">Все еще сомневаетесь?</b>
+              <p class="multimedia__text video-text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              <div class="multimedia__video-container"></div>
           </div>
         </div>
       </section>
@@ -131,19 +144,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link--twitter" href="#">Мы в твиттере</a>
+              <a class="social-links social__link--twitter" href="#"><span class="visually-hidden">Мы в твиттере</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link--facebook" href="#">Мы в фэйсбуке</a>
+              <a class="social-links social__link--facebook" href="#"><span class="visually-hidden">Мы в фэйсбуке</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link--youtube" href="#">Мы в ютубе</a>
+              <a class="social-links social__link--youtube" href="#"><span class="visually-hidden">Мы в youtube</span></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Html Academy</span></a>
         </div>
       </div>
     </footer>

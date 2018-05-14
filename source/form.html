@@ -5,13 +5,14 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper photo-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="main-nav__link" href="#">Главная</a>
@@ -27,15 +28,15 @@
               <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">Html academy</a>
             </li>
           </ul>
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image photo__logo-image" src="./img/logo-sedona-mobile.svg" width="104" height="85" alt="Городок Седона">
+          </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
       </nav>
-      <div class="page-header__top-menu">
-        <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="104" height="85" alt="Городок Седона">
-        </a>
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <div class="page-header__top top__photo">
+        <img class="photo__sedona-text" src="./img/text-sedona.svg" alt="Sedona" width="460" height="80">
       </div>
-      <div class="page-header__poster"></div>
     </header>
 
     <footer class="page-footer">
@@ -44,19 +45,19 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link--twitter" href="#">Мы в твиттере</a>
+              <a class="social-links social__link--twitter" href="#"><span class="visually-hidden">Мы в твиттере</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link--facebook" href="#">Мы в фэйсбуке</a>
+              <a class="social-links social__link--facebook" href="#"><span class="visually-hidden">Мы в фэйсбуке</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link--youtube" href="#">Мы в ютубе</a>
+              <a class="social-links social__link--youtube" href="#"><span class="visually-hidden">Мы в youtube</span></a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">Html Academy</span></a>
         </div>
       </div>
     </footer>
