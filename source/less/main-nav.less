@@ -109,6 +109,8 @@
 
   .page-header__logo-image {
     top: 0;
+    width: auto;
+    height: auto;
   }
 
   .main-nav__toggle {
@@ -124,20 +126,5 @@
 
   .photo-nav__wrapper {
     display: flex;
-  }
-
-  .photo-nav__wrapper::before {
-    content: "";
-    position: absolute;
-    top: -105px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    transform-origin: 50% 50%;
-    transform: rotate(-45deg);
-    width: 0;
-    height: 0;
-    border: 85px solid #81b3d2;
-    border-bottom-left-radius: 10px;
   }
 }
