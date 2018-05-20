@@ -83,6 +83,10 @@
   background-repeat: no-repeat;
   background-size: 100% 260px;
   background-position: 0 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/main-city-mobile@2x.jpg");
+  }
 }
 
 .reasons-bridge {
@@ -90,6 +94,10 @@
   background-repeat: no-repeat;
   background-size: 100% 260px;
   background-position: 0 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/main-bridge-mobile@2x.jpg");
+  }
 }
 
 .text {
@@ -140,7 +148,7 @@
 .main-reasons__number {
   margin: 0;
   padding: 0;
-  padding-top: 8px;
+  padding-top: 10px;
   line-height: 21px;
 }
 
@@ -207,7 +215,7 @@
   .advantage-list__item-container {
     display: flex;
     flex-direction: row;
-    background-size: 67% 256px;
+    background-size: 66.5% 256px;
     height: 256px;
   }
 
@@ -217,19 +225,26 @@
 
   .main-reasons {
     height: 256px;
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 33.5%;
     padding: 0;
   }
 
   .reasons-city {
+    background-image: url("../img/main-city-tablet@1x.jpg");
     background-position: right;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-city-tablet@2x.jpg");
+    }
   }
 
   .reasons-bridge {
+    background-image: url("../img/main-bridge-tablet@1x.jpg");
     background-position: left;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-bridge-tablet@2x.jpg");
+    }
   }
 
   .reasons__slogan,
@@ -263,8 +278,8 @@
   }
 
   .main-reasons__title {
-    padding-top: 0;
-    padding-left: 20%;
+    padding-top: 45px;
+    padding-left: 20.7%;
     padding-right: 20.5%;
   }
 
@@ -276,7 +291,7 @@
   }
 
   .main-reasons__text {
-    padding-top: 28px;
+    padding-top: 21px;
   }
 
   .devil-bridge__text {
@@ -382,14 +397,33 @@
   }
 
   .main-reasons__title {
+    padding-top: 53px;
     padding-right: 31%;
-    padding-left: 31%;
+    padding-left: 31.5%;
   }
 
   .main-reasons__text {
     padding-top: 20px;
     padding-right: 14%;
     padding-left: 15%;
+  }
+
+  .reasons-city {
+    background-image: url("../img/main-city-desktop@1x.jpg");
+    background-size: 800px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-city-desktop@2x.jpg");
+    }
+  }
+
+  .reasons-bridge {
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
+    background-size: 800px auto;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
+    }
   }
 
   .devil-bridge__text {

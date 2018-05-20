@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -38,7 +39,93 @@
         <img class="photo__sedona-text" src="./img/text-sedona.svg" alt="Sedona" width="460" height="80">
       </div>
     </header>
-
+    <main>
+      <h1 class="visually-hidden">Мы в ожидании ваших отзывов!</h1>
+      <section class="comments">
+        <header class="comments__header">
+          <h2 class="visually-hidden">Ваши отзывы нужны нам!</h2>
+          <b class="comments__title">Оставьте свой отзыв</b>
+          <p class="comments__intro text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </header>
+        <div class="comments__container">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="comments__name">
+              <legend>Представьтесь:</legend>
+              <ul class="comments__name-list">
+                <li class="comments__name-item">
+                  <label for="first-name">Имя*:</label>
+                  <input type="text" name="username" id="first-name" placeholder="Пётр">
+                </li>
+                <li class="comments__name-item">
+                  <label for="second-name">Фамилия*:</label>
+                  <input type="text" name="second-name" id="second-name" placeholder="Иванов">
+                </li>
+                <li class="comments__name-item">
+                  <label for="patronymic">Отчество:</label>
+                  <input type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="comments__contacts">
+              <legend>Контактная информация:</legend>
+              <ul class="comments__contacts-list">
+                <li class="comments__contacts-item">
+                  <label for="telephone">Контактный телефон*:</label>
+                  <input type="text" name="telephone" id="telephone" placeholder="Введите телефон">
+                </li>
+                <li class="comments__contacts-item">
+                  <label for="e-mail">Электронная почта*:</label>
+                  <input type="text" name="e-mail" id="e-mail" placeholder="Введите e-mail">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="comments__impress">
+              <legend>Ваше общее впечатление:</legend>
+              <ul class="comments__impress-list">
+                <li class="comments__impress-item">
+                  <input type="radio" name="impress-value" value="impress-positive" id="positive" checked>
+                  <label for="positive">Скорее положительное</label>
+                </li>
+                <li class="comments__impress-item">
+                  <input type="radio" name="impress-value" value="impress-negative" id="negative">
+                  <label for="negative">Скорее отрицательное</label>
+                </li>
+                <li class="comments__impress-item">
+                  <input type="radio" name="impress-value" value="impress-neutral" id="neutral">
+                  <label for="neutral">Затрудняюсь ответить</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="comments__sites">
+              <legend>Посещенные достопримечательности:</legend>
+              <ul class="comments__impress-list">
+                <li class="comments__impress-item">
+                  <input type="checkbox" name="bridge" id="bridge" checked>
+                  <label for="bridge">Мост Дьявола</label>
+                </li>
+                <li class="comments__impress-item">
+                  <input type="checkbox" name="bell" id="bell" checked>
+                  <label for="bell">Гора-Колокол</label>
+                </li>
+                <li class="comments__impress-item">
+                  <input type="checkbox" name="park" id="park" checked>
+                  <label for="park">Слайд-парк</label>
+                </li>
+                <li class="comments__impress-item">
+                  <input type="checkbox" name="cliffs" id="cliffs">
+                  <label for="cliffs">Красные скалы</label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="comments__emotions">
+              <label class="comments__emotions-title" for="emotions">Опишите свои эмоции:</label>
+              <textarea class="comments__emotions-text" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+          </form>
+        </div>
+        <button class="comments__send-button">Отправить отзыв</button>
+      </section>
+    </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <h2 class="page-footer__hashtag">#visitsedona</h2>

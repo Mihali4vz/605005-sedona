@@ -11,6 +11,7 @@
 }
 
 .video-text {
+  padding-bottom: 37px;
   box-shadow: none;
 }
 
@@ -24,16 +25,26 @@
   }
 
   .multimedia__video-container {
+    width: 648px;
     height: 500px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .multimedia__video-container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
   .video-title {
     padding-top: 71px;
   }
 
   .multimedia__video {
-    padding-bottom: 80px;
+    padding-bottom: 91px;
+  }
+
+  .video-text {
+    padding-bottom: 71px;
   }
 }
