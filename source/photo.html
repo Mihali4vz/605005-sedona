@@ -35,14 +35,13 @@
               <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="104" height="85" alt="Городок Седона">
             </picture>
           </a>
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
       </nav>
-      <div class="page-header__top top__photo">
-        <img class="photo__sedona-text" src="./img/text-sedona.svg" alt="Sedona" width="460" height="80">
+      <div class="page-header__top top-photo">
+        <img class="sedona-text" src="./img/text-sedona.svg" alt="Sedona" width="460" height="80">
+        <button class="main-nav__toggle toggle-hide" type="button" aria-label="Открыть меню"></button>
       </div>
     </header>
-
     <main class="page-main">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       <section class=multimedia>
@@ -56,19 +55,19 @@
                   <figure class="photo-list__item-container vast-item">
                     <p class="multimedia__image-container sunset-image__container">
                       <picture>
-                        <source media="(min-width: 1200px)" srcset="./img/photo-sunset-desktop@1x.jpg, ./img/photo-sunset-desktop@2x.jpg">
-                        <source media="(min-width: 768px)" srcset="./img/photo-sunset-tablet@1x.jpg, ./img/photo-sunset-tablet@2x.jpg">
-                        <img class="multimedia__image-sunset" src="./img/photo-sunset-mobile@1x.jpg" srcset="./img/photo-sunset-mobile@2x.jpg" alt="Неродные просторы">
+                        <source media="(min-width: 1200px)" srcset="./img/photo-sunset-desktop@1x.jpg 1x, ./img/photo-sunset-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./img/photo-sunset-tablet@1x.jpg 1x, ./img/photo-sunset-tablet@2x.jpg 2x">
+                        <img class="multimedia__image-sunset" src="./img/photo-sunset-mobile@1x.jpg" srcset="./img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
                       </picture>
                     </p>
-                    <figcaption class="multimedia__photo-description main-description">
+                    <figcaption class="multimedia__photo-description main-description photo-description">
                       <div class="photo-description__container">
                         <b class="multimedia__photo-title">Неродные просторы</b>
                         <p class="multimedia__photo-author">Автор фото: Борис</p>
                       </div>
                       <div class="photo-list__rating item-rating">
                         <button class="item-rating__button button" type="button" aria-label="Оценить фото">
-                          <svg class="item-rating__picture" fill="#b2b2b2" xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                          <svg class="item-rating__picture" fill="#b2b2b2" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
                         </button>
                         <b class="item-rating__number">1350</b>
                       </div>
@@ -81,9 +80,9 @@
                   <figure class="photo-list__item-container">
                     <p class="multimedia__image-container">
                       <picture>
-                        <source media="(min-width: 1200px)" srcset="./img/photo-cactus-desktop@1x.jpg, ./img/photo-cactus-desktop@2x.jpg">
-                        <source media="(min-width: 768px)" srcset="./img/photo-cactus-tablet@1x.jpg, ./img/photo-cactus-tablet@2x.jpg">
-                        <img class="multimedia__image other-items" src="./img/photo-cactus-mobile@1x.jpg" srcset="./img/photo-cactus-mobile@2x.jpg" alt="Местная растительность">
+                        <source media="(min-width: 1200px)" srcset="./img/photo-cactus-desktop@1x.jpg 1x, ./img/photo-cactus-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./img/photo-cactus-tablet@1x.jpg 1x, ./img/photo-cactus-tablet@2x.jpg 2x">
+                        <img class="multimedia__image other-items" src="./img/photo-cactus-mobile@1x.jpg" srcset="./img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
                       </picture>
                     </p>
                     <figcaption class="multimedia__photo-description less-description">
@@ -91,9 +90,9 @@
                         <b class="multimedia__photo-title">Местная растительность</b>
                         <p class="multimedia__photo-author">Автор фото: Сергей</p>
                       </div>
-                      <div class="photo-list__rating item-rating \">
+                      <div class="photo-list__rating item-rating">
                         <button class="item-rating__button button" type="button" aria-label="Оценить фото">
-                          <svg class="item-rating__picture" fill="#b2b2b2" xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                          <svg class="item-rating__picture" fill="#b2b2b2" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
                         </button>
                         <b class="item-rating__number">143</b>
                       </div>
@@ -104,9 +103,9 @@
                   <figure class="photo-list__item-container">
                     <p class="multimedia__image-container">
                       <picture>
-                        <source media="(min-width: 1200px)" srcset="./img/photo-roads-desktop@1x.jpg, ./img/photo-roads-desktop@2x.jpg">
-                        <source media="(min-width: 768px)" srcset="./img/photo-roads-tablet@1x.jpg, ./img/photo-roads-tablet@2x.jpg">
-                        <img class="multimedia__image other-items" src="./img/photo-roads-mobile@1x.jpg" srcset="./img/photo-roads-mobile@2x.jpg" alt="Дорога на север">
+                        <source media="(min-width: 1200px)" srcset="./img/photo-roads-desktop@1x.jpg 1x, ./img/photo-roads-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./img/photo-roads-tablet@1x.jpg 1x, ./img/photo-roads-tablet@2x.jpg 2x">
+                        <img class="multimedia__image other-items" src="./img/photo-roads-mobile@1x.jpg" srcset="./img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
                       </picture>
                     </p>
                     <figcaption class="multimedia__photo-description less-description north-road__description">
@@ -116,7 +115,7 @@
                       </div>
                       <div class="photo-list__rating item-rating">
                         <button class="item-rating__button button" type="button" aria-label="Оценить фото">
-                          <svg class="item-rating__picture" fill="#b2b2b2" xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                          <svg class="item-rating__picture" fill="#b2b2b2" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
                         </button>
                         <b class="item-rating__number">96</b>
                       </div>
@@ -127,9 +126,9 @@
                   <figure class="photo-list__item-container">
                     <p class="multimedia__image-container">
                       <picture>
-                        <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg, ./img/photo-bridge-desktop@2x.jpg">
-                        <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg, ./img/photo-bridge-tablet@2x.jpg">
-                        <img class="multimedia__image other-items" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg" alt="Мост дьявола">
+                        <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
+                        <img class="multimedia__image other-items" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
                       </picture>
                     </p>
                     <figcaption class="multimedia__photo-description less-description devil-bridge__description">
@@ -139,7 +138,7 @@
                       </div>
                       <div class="photo-list__rating item-rating">
                         <button class="item-rating__button button" type="button" aria-label="Оценить фото">
-                          <svg class="item-rating__picture" fill="#b2b2b2" xmlns="http://www.w3.org/2000/svg" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
+                          <svg class="item-rating__picture" fill="#b2b2b2" width="22" height="20"><path d="M12.383 3.646l-.637 2.929L11.219 9H19.9v2l.001.058L17 18H8V8.029l.014-.015 4.369-4.368M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1v.044V9z"/></svg>
                         </button>
                         <b class="item-rating__number">254</b>
                       </div>
@@ -153,17 +152,32 @@
               <b class="multimedia__title video-title">Все еще сомневаетесь?</b>
               <p class="multimedia__text video-text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
               <div class="multimedia__video-container">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="./img/video-desktop@1x.jpg, ./img/video-desktop@2x.jpg">
-                  <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg, ./img/video-tablet@2x.jpg">
-                  <img class="multimedia__video-image" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg" alt="Видео Седоны">
+                <picture class="multimedia__video-image">
+                  <source media="(min-width: 1200px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+                  <img src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" alt="Видео Седоны">
                 </picture>
+                <div class="multimedia__video-interface">
+                  <div class="multimedia__video-scale">
+                    <div class="scale"></div>
+                    <div class="range-toggle" tabindex="0"></div>
+                  </div>
+                    <button class="multimedia-controls__replay-btn" type="button" aria-label="Воспроизвести заново">
+                      <svg class="multimedia-controls__replay-icon" width="16" height="20"><path d="M8 4V0L3 5l5 5V6c3.315 0 6 2.686 6 6s-2.685 6-6 6-6-2.686-6-6H0c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                    </button>
+                    <button class="multimedia-controls__subtitles-btn" type="button" aria-label="Субтитры">
+                      <svg class="multimedia-controls__subtitles-icon" width="32" height="20"><path d="M29 0H3C1.35 0 0 1.35 0 3v14c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM14.403 15.854a8.61 8.61 0 0 1-1.678.164 5.986 5.986 0 0 1-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.28-.766-.419-1.695-.419-2.786 0-1.134.157-2.085.471-2.851.315-.768.723-1.384 1.224-1.854a4.53 4.53 0 0 1 1.679-1.008 5.86 5.86 0 0 1 1.852-.307c.66 0 1.22.045 1.678.134.457.087.835.192 1.133.313l-.448 1.92a3.332 3.332 0 0 0-.902-.265A8.244 8.244 0 0 0 12.973 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.607.619 1.01.812.402.193.867.29 1.396.29.496 0 .915-.049 1.257-.148.342-.099.639-.227.893-.38l.463 1.841c-.354.249-.803.43-1.349.539zm8.698 0a8.618 8.618 0 0 1-1.678.164 5.986 5.986 0 0 1-1.976-.323c-.623-.214-1.172-.562-1.646-1.041s-.852-1.103-1.133-1.868c-.281-.767-.421-1.695-.421-2.786 0-1.134.157-2.085.471-2.851.314-.768.723-1.384 1.223-1.854a4.526 4.526 0 0 1 1.68-1.008 5.858 5.858 0 0 1 1.851-.307c.661 0 1.221.045 1.678.134a6.05 6.05 0 0 1 1.133.313l-.446 1.918a3.314 3.314 0 0 0-.901-.265A8.569 8.569 0 0 0 21.67 6c-.915 0-1.649.325-2.206.977-.558.651-.836 1.663-.836 3.031 0 .598.067 1.142.199 1.632.132.493.334.913.603 1.26.271.349.606.619 1.009.812.402.193.868.29 1.396.29.497 0 .915-.049 1.257-.148.342-.099.64-.227.894-.38l.463 1.841c-.353.249-.803.43-1.348.539z"/>
+                      </svg>
+                    </button>
+                    <button class="multimedia-controls__fullscreen-btn" type="button" aria-label="Полноэкранный режим">
+                      <svg class="multimedia-controls__fullscreen-icon" width="20" height="20"><g><path d="M0 0v6h3V3h3V0H3zM3 14H0v6h6v-3H3zM17 0h-3v3h3v3h3V0zM17 17h-3v3h6v-6h-3z"/></g></svg>
+                    </button>
+                </div>
               </div>
           </div>
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <h2 class="page-footer__hashtag">#visitsedona</h2>
@@ -194,5 +208,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/nav-toggle.js"></script>
   </body>
 </html>

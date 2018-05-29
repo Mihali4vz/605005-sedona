@@ -12,7 +12,7 @@
   }
 }
 
-.top__photo {
+.top-photo {
   position: relative;
   padding-top: 56px;
   height: 158px;
@@ -41,7 +41,7 @@
   z-index: 100;
 }
 
-.top__photo::after {
+.top-photo::after {
   content: "";
   position: absolute;
   top: 188px;
@@ -58,18 +58,37 @@
 .main__sedona-text {
   margin: 0 auto;
   padding-top: 146px;
-  width: 280px;
-  height: 210px;
   padding-right: 6%;
   padding-left: 6%;
+  width: 280px;
+  height: 210px;
 }
 
-.photo__sedona-text {
+.sedona-text {
   margin: 0 auto;
   padding-top: 52px;
   width: 229px;
   height: 39px;
 }
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 6%;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon-menu.svg");
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-hide {
+  display: none;
+}
+
 
 @media (min-width: @tablet-width) {
   .page-header__top {
@@ -85,7 +104,7 @@
     }
   }
 
-  .top__photo {
+  .top-photo {
     padding-top: 0;
     height: 290px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -105,7 +124,7 @@
     background-size: 100% 57px;
   }
 
-  .top__photo::after {
+  .top-photo::after {
     top: 291px;
     height: 57px;
     background-image: url("../img/bg-intro-triangle-tablet.svg");
@@ -118,10 +137,14 @@
     height: 344px;
   }
 
-  .photo__sedona-text {
+  .sedona-text {
     padding-top: 94px;
     width: 458px;
     height: 78px;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 }
 
@@ -137,7 +160,7 @@
     }
   }
 
-  .top__photo {
+  .top-photo {
     height: 300px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: cover 300px;
@@ -152,7 +175,7 @@
     background-size: 89% 57px;
   }
 
-  .top__photo::after {
+  .top-photo::after {
     top: 301px;
     background-image: url("../img/bg-intro-triangle-desktop.svg");
     background-size: 89% 57px;
@@ -170,7 +193,7 @@
     padding-top: 78px;
   }
 
-  .photo__sedona-text {
+  .sedona-text {
     padding-top: 100px;
   }
 }

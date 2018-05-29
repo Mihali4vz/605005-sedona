@@ -35,11 +35,11 @@
               <img class="page-header__logo-image" src="./img/logo-sedona-mobile.svg" width="104" height="85" alt="Городок Седона">
             </picture>
           </a>
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
       </nav>
-      <div class="page-header__top top__photo">
-        <img class="photo__sedona-text" src="./img/text-sedona.svg" alt="Sedona" width="460" height="80">
+      <div class="page-header__top top-photo">
+        <img class="sedona-text" src="./img/text-sedona.svg" alt="Sedona" width="460" height="80">
+        <button class="main-nav__toggle toggle-hide" type="button" aria-label="Открыть меню"></button>
       </div>
     </header>
     <main>
@@ -74,11 +74,11 @@
               <ul class="comments__contacts-list form-list">
                 <li class="comments__contacts-item telephone-item">
                   <label class="form-text contacts-text" for="telephone"><span class="telephone-text">Контактный</span> телефон*:</label>
-                  <input class="comments__text-inputs" type="text" name="telephone" id="telephone" placeholder="Введите телефон">
+                  <input class="comments__text-inputs" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="telephone" placeholder="Введите телефон" required>
                 </li>
                 <li class="comments__contacts-item mail-item">
                   <label class="form-text contacts-text" for="e-mail">Электронная почта*:</label>
-                  <input class="comments__text-inputs" type="text" name="e-mail" id="e-mail" placeholder="Введите e-mail">
+                  <input class="comments__text-inputs" type="email" name="e-mail" id="e-mail" placeholder="Введите e-mail" required>
                 </li>
               </ul>
             </fieldset>
@@ -87,15 +87,15 @@
               <ul class="comments__impress-list form-list">
                 <li class="comments__impress-item">
                   <input class="imress-btns visually-hidden" type="radio" name="impress-value" value="impress-positive" id="positive" checked>
-                  <label class="impress__title" for="positive">Скорее положительное</label>
+                  <label class="comments__impress-title" for="positive">Скорее положительное</label>
                 </li>
                 <li class="comments__impress-item">
                   <input class="imress-btns visually-hidden" type="radio" name="impress-value" value="impress-negative" id="negative">
-                  <label class="impress__title" for="negative">Скорее отрицательное</label>
+                  <label class="comments__impress-title" for="negative">Скорее отрицательное</label>
                 </li>
                 <li class="comments__impress-item">
                   <input class="imress-btns visually-hidden" type="radio" name="impress-value" value="impress-neutral" id="neutral">
-                  <label class="impress__title" for="neutral">Затрудняюсь ответить</label>
+                  <label class="comments__impress-title" for="neutral">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
@@ -104,19 +104,19 @@
               <ul class="comments__sights-list form-list">
                 <li class="comments__sights-item">
                   <input class="sights-btns visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
-                  <label class="sights__title" for="bridge">Мост Дьявола</label>
+                  <label class="comments__sights-title" for="bridge">Мост Дьявола</label>
                 </li>
                 <li class="comments__sights-item">
                   <input class="sights-btns visually-hidden" type="checkbox" name="bell" id="bell" checked>
-                  <label class="sights__title" for="bell">Гора-Колокол</label>
+                  <label class="comments__sights-title" for="bell">Гора-Колокол</label>
                 </li>
                 <li class="comments__sights-item">
                   <input class="sights-btns visually-hidden" type="checkbox" name="park" id="park" checked>
-                  <label class="sights__title" for="park">Слайд-парк</label>
+                  <label class="comments__sights-title" for="park">Слайд-парк</label>
                 </li>
                 <li class="comments__sights-item">
                   <input class="sights-btns visually-hidden" type="checkbox" name="cliffs" id="cliffs">
-                  <label class="sights__title" for="cliffs">Красные скалы</label>
+                  <label class="comments__sights-title" for="cliffs">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
@@ -180,11 +180,12 @@
         <div class="modal-success__upper-section">
           <b class="modal-success__title">Ваш отзыв отправлен!</b>
         </div>
-        <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.</br> В ближайшее время мы опубликуем его на сайте.</p>
+        <p class="modal-success__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
         <div class="modal-succes__lower-section">
           <button class="modal-success__button button" type="button">Закрыть окно</button>
         </div>
       </div>
     </section>
+    <script src="js/nav-toggle.js"></script>
   </body>
 </html>
