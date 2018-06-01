@@ -1,5 +1,7 @@
 .multimedia__video-container {
   position: relative;
+  margin: 0 auto;
+  width: 320px;
   height: 200px;
 }
 
@@ -10,7 +12,7 @@
 
 .video-title {
   display: block;
-  padding-top: 30px;
+  padding-top: 33px;
   padding-right: 6%;
   padding-left: 6%;
 }
@@ -59,9 +61,11 @@
 .multimedia-controls__replay-btn,
 .multimedia-controls__subtitles-btn,
 .multimedia-controls__fullscreen-btn {
-  margin-top: 22px;
+  margin-top: 20px;
+  padding: 0;
   border: 0;
   opacity: 0.7;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -78,12 +82,12 @@
 }
 
 .multimedia-controls__replay-btn {
-  margin-right: 113px;
-  margin-left: 17px;
+  margin-right: 129px;
+  margin-left: 25px;
 }
 
 .multimedia-controls__subtitles-btn {
-  margin-right: 12px;
+  margin-right: 28px;
 }
 
 .multimedia-controls__replay-icon,
@@ -109,7 +113,7 @@
   .multimedia__video-interface {
     display: flex;
     align-items: center;
-    bottom: 1px;
+    bottom: 0px;
     left: 0;
     margin-left: 0;
     width: 648px;
@@ -119,7 +123,7 @@
   }
 
   .multimedia__video-scale {
-    margin-right: 11px;
+    margin-right: 18px;
   }
 
   .scale {
@@ -133,15 +137,15 @@
   .multimedia-controls__replay-btn,
   .multimedia-controls__subtitles-btn,
   .multimedia-controls__fullscreen-btn {
-    margin-top: 1px;
+    margin-top: 0;
     background-color: transparent;
     opacity: 1;
   }
 
   .multimedia-controls__replay-btn {
     order: -1;
-    margin-right: 15px;
-    margin-left: 27px;
+    margin-right: 22px;
+    margin-left: 35px;
   }
 
   .multimedia-controls__replay-btn:hover,
@@ -161,6 +165,10 @@
   .multimedia-controls__fullscreen-icon {
     fill: #ffffff;
   }
+
+  .multimedia-controls__subtitles-btn {
+    margin-right: 31px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -177,6 +185,10 @@
     padding-bottom: 91px;
   }
 
+  .multimedia__video-dummy {
+    width: 100%;
+  }
+
   .video-text {
     padding-bottom: 71px;
   }
@@ -186,7 +198,7 @@
   }
 
   .multimedia__video-scale {
-    margin-right: 16px;
+    margin-right: 21px;
   }
 
   .scale {
