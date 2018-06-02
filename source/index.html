@@ -5,20 +5,19 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__wrapper photo-nav__wrapper">
-          <ul class="main-nav__list site-list main-nav--show">
-            <li class="site-list__item main-item">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list main-nav__list--show">
+            <li class="site-list__item">
               <a class="main-nav__link" href="#">Главная</a>
-              <button class="exit-button site-list__button" type="button" aria-label="Выход"></button>
+              <button class="site-list__button" type="button" aria-label="Выход"></button>
             </li>
-            <li class="site-list__item photo">
+            <li class="site-list__item">
               <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
@@ -38,8 +37,8 @@
         </div>
       </nav>
       <div class="page-header__top">
-        <img class="main__sedona-text" src="./img/text-sedona-index.svg" alt="Sedona" width="460" height="350">
-        <button class="main-nav__toggle toggle-hide" type="button" aria-label="Открыть меню"></button>
+        <img class="page-header__top-text" src="./img/text-sedona-index.svg" alt="Sedona" width="460" height="350">
+        <button class="page-header__toggle page-header__toggle--hide" type="button" aria-label="Открыть меню"></button>
       </div>
     </header>
     <main class="page-main">
@@ -48,40 +47,40 @@
         <header class="reasons__header">
           <h2 class="visually-hidden">Причины посетить Седону</h2>
           <b class="reasons__slogan">Седона – небольшой городок в Аризоне, заслуживающий большего!</b>
-          <p class="reasons__intro text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+          <p class="reasons__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
         </header>
         <div class="reasons__wrapper">
           <ul class="reasons__list advantage-list">
             <li class="advantage-list__item">
-              <div class="advantage-list__item-container reasons-city">
-                <div class="advantage-list__item-wrapper main-reasons true-town">
-                  <h3 class="main-reasons__title true-town__title">Настоящий городок</h3>
+              <div class="advantage-list__item-container advantage-list__item-container--city">
+                <div class="advantage-list__item-wrapper advantage-list__item-wrapper--main advantage-list__item-wrapper--town main-reasons">
+                  <h3 class="main-reasons__title main-reasons__title--true-town">Настоящий городок</h3>
                   <p class="main-reasons__number">– №1 –</p>
                   <p class="main-reasons__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
               </div>
               <ul class="main-reason">
-                <li class="main-reason__features habit-feature">
-                  <h3 class="main-reason__title feature-title ">Жилье</h3>
-                  <p class="main-reason__text text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <li class="main-reason__features main-reason__features--habit">
+                  <h3 class="main-reason__title main-reason__title--feature ">Жилье</h3>
+                  <p class="main-reason__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                 </li>
-                <li class="main-reason__features souvenir-feature">
-                  <h3 class="main-reason__title feature-title">Сувениры</h3>
-                  <p class="main-reason__text souvenir-text text">Не только китайского,
+                <li class="main-reason__features main-reason__features--souvenir">
+                  <h3 class="main-reason__title main-reason__title--feature">Сувениры</h3>
+                  <p class="main-reason__text main-reason__text--souvenir">Не только китайского,
                     но и местного производства!</p>
                 </li>
-                <li class="main-reason__features food-feature">
-                  <h3 class="main-reason__title feature-title">Еда</h3>
-                  <p class="main-reason__text text food-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <li class="main-reason__features main-reason__features--food">
+                  <h3 class="main-reason__title main-reason__title--feature">Еда</h3>
+                  <p class="main-reason__text main-reason__text--food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
               </ul>
             </li>
             <li class="advantage-list__item">
-              <div class="advantage-list__item-container reasons-bridge bridge-container">
-                <div class="advantage-list__item-wrapper main-reasons">
+              <div class="advantage-list__item-container advantage-list__item-container--reasons-bridge advantage-list__item-container--bridge">
+                <div class="advantage-list__item-wrapper advantage-list__item-wrapper--main">
                   <h3 class="main-reasons__title">Там есть мост дьявола</h3>
                   <p class="main-reasons__number">– №2 –</p>
-                  <p class="main-reasons__text devil-bridge__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                  <p class="main-reasons__text main-reasons__text--devil">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
               </div>
             </li>
@@ -89,24 +88,24 @@
           <ul class="reasons__list additional-list">
             <li class="additional-list__wrapper">
               <div class="advantage-list__item another-list__item">
-                <div class="advantage-list__item-wrapper addl-reasons">
+                <div class="advantage-list__item-wrapper advantage-list__item-wrapper--additional">
                   <h3 class="addl-reasons__title">Небольшая площадь</h3>
-                  <p class="text number">– №3 –</p>
-                  <p class="addl-reasons__text places-text text">Все интересные места находятся очень близко</p>
+                  <p class="addl-reasons-number number">– №3 –</p>
+                  <p class="addl-reasons__text addl-reasons__text--places">Все интересные места находятся очень близко</p>
                 </div>
               </div>
               <div class="advantage-list__item another-list__item">
-                <div class="advantage-list__item-wrapper addl-reasons">
+                <div class="advantage-list__item-wrapper advantage-list__item-wrapper--additional">
                   <h3 class="addl-reasons__title">Красивая дорога</h3>
-                  <p class="text number">– №4 –</p>
-                  <p class="addl-reasons__text road-text text">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
+                  <p class="addl-reasons-number number">– №4 –</p>
+                  <p class="addl-reasons__text addl-reasons__text--road">Ехать в Седону из Лас-вегаса совсем не скучно!</p>
                 </div>
               </div>
               <div class="advantage-list__item another-list__item">
-                <div class="advantage-list__item-wrapper addl-reasons tourist-few">
+                <div class="advantage-list__item-wrapper advantage-list__item-wrapper--additional advantage-list__item-wrapper--tourist">
                   <h3 class="addl-reasons__title">Мало туристов</h3>
-                  <p class="text number">– №5 –</p>
-                  <p class="addl-reasons__text text">Большинство едет в Гранд каньон и толпится там</p>
+                  <p class="addl-reasons-number number">– №5 –</p>
+                  <p class="addl-reasons__text">Большинство едет в Гранд каньон и толпится там</p>
                 </div>
               </div>
             </li>

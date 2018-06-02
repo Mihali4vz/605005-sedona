@@ -5,20 +5,19 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__wrapper photo-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item main-item">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list main-nav__list--show">
+            <li class="site-list__item">
               <a class="main-nav__link" href="index.html">Главная</a>
-              <button class="exit-button site-list__button" type="button" aria-label="Выход"></button>
+              <button class="site-list__button" type="button" aria-label="Выход"></button>
             </li>
-            <li class="site-list__item photo">
+            <li class="site-list__item">
               <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="site-list__item">
@@ -39,7 +38,7 @@
       </nav>
       <div class="page-header__top top-photo">
         <img class="sedona-text" src="./img/text-sedona.svg" alt="Sedona" width="460" height="80">
-        <button class="main-nav__toggle toggle-hide" type="button" aria-label="Открыть меню"></button>
+        <button class="page-header__toggle page-header__toggle--hide" type="button" aria-label="Открыть меню"></button>
       </div>
     </header>
     <main class="page-main">
@@ -52,15 +51,15 @@
             <div class="multimedia__photo-wrapper">
               <ul class="multimedia__photo-list photo-list">
                 <li class="photo-list__item">
-                  <figure class="photo-list__item-container vast-item">
-                    <p class="multimedia__image-container sunset-image__container">
+                  <figure class="photo-list__item-container photo-list__item-container--vast">
+                    <p class="multimedia__image-container multimedia__image-container--sunset">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="./img/photo-sunset-desktop@1x.jpg 1x, ./img/photo-sunset-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="./img/photo-sunset-tablet@1x.jpg 1x, ./img/photo-sunset-tablet@2x.jpg 2x">
                         <img class="multimedia__image-sunset" src="./img/photo-sunset-mobile@1x.jpg" srcset="./img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
                       </picture>
                     </p>
-                    <figcaption class="multimedia__photo-description main-description photo-description">
+                    <figcaption class="multimedia__photo-description multimedia__photo-description--main photo-description">
                       <div class="photo-description__container">
                         <b class="multimedia__photo-title">Неродные просторы</b>
                         <p class="multimedia__photo-author">Автор фото: Борис</p>
@@ -75,17 +74,17 @@
                   </figure>
                 </li>
               </ul>
-              <ul class="multimedia__photo-list photo-list other-photo">
-                <li class="photo-list__item less-item">
+              <ul class="multimedia__photo-list photo-list multimedia__photo-list--other">
+                <li class="photo-list__item photo-list__item--less">
                   <figure class="photo-list__item-container">
                     <p class="multimedia__image-container">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="./img/photo-cactus-desktop@1x.jpg 1x, ./img/photo-cactus-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="./img/photo-cactus-tablet@1x.jpg 1x, ./img/photo-cactus-tablet@2x.jpg 2x">
-                        <img class="multimedia__image other-items" src="./img/photo-cactus-mobile@1x.jpg" srcset="./img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+                        <img class="multimedia__image multimedia__image--other" src="./img/photo-cactus-mobile@1x.jpg" srcset="./img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
                       </picture>
                     </p>
-                    <figcaption class="multimedia__photo-description less-description">
+                    <figcaption class="multimedia__photo-description multimedia__photo-description--less">
                       <div class="photo-description__container">
                         <b class="multimedia__photo-title">Местная растительность</b>
                         <p class="multimedia__photo-author">Автор фото: Сергей</p>
@@ -99,16 +98,16 @@
                     </figcaption>
                   </figure>
                 </li>
-                <li class="photo-list__item less-item">
+                <li class="photo-list__item photo-list__item--less">
                   <figure class="photo-list__item-container">
                     <p class="multimedia__image-container">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="./img/photo-roads-desktop@1x.jpg 1x, ./img/photo-roads-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="./img/photo-roads-tablet@1x.jpg 1x, ./img/photo-roads-tablet@2x.jpg 2x">
-                        <img class="multimedia__image other-items" src="./img/photo-roads-mobile@1x.jpg" srcset="./img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+                        <img class="multimedia__image multimedia__image--other" src="./img/photo-roads-mobile@1x.jpg" srcset="./img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
                       </picture>
                     </p>
-                    <figcaption class="multimedia__photo-description less-description north-road__description">
+                    <figcaption class="multimedia__photo-description multimedia__photo-description--less multimedia__photo-description--north">
                       <div class="photo-description__container">
                         <b class="multimedia__photo-title">Дорога на север</b>
                         <p class="multimedia__photo-author">Автор фото: Петр</p>
@@ -122,19 +121,19 @@
                     </figcaption>
                   </figure>
                 </li>
-                <li class="photo-list__item less-item">
+                <li class="photo-list__item photo-list__item--less">
                   <figure class="photo-list__item-container">
                     <p class="multimedia__image-container">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
-                        <img class="multimedia__image other-items" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+                        <img class="multimedia__image multimedia__image--other" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
                       </picture>
                     </p>
-                    <figcaption class="multimedia__photo-description less-description devil-bridge__description">
+                    <figcaption class="multimedia__photo-description multimedia__photo-description--less multimedia__photo-description--devil">
                       <div class="photo-description__container">
                         <b class="multimedia__photo-title">Мост дьявола</b>
-                        <p class="multimedia__photo-author bridge-author">Автор фото: Антон</p>
+                        <p class="multimedia__photo-author multimedia__photo-author--bridge">Автор фото: Антон</p>
                       </div>
                       <div class="photo-list__rating item-rating">
                         <button class="item-rating__button button" type="button" aria-label="Оценить фото">
@@ -149,8 +148,8 @@
             </div>
           </div>
           <div class="multimedia__video">
-              <b class="multimedia__title video-title">Все еще сомневаетесь?</b>
-              <p class="multimedia__text video-text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+              <b class="multimedia__title multimedia__title--video">Все еще сомневаетесь?</b>
+              <p class="multimedia__text multimedia__text--video">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
               <div class="multimedia__video-container">
                 <picture class="multimedia__video-image">
                   <source media="(min-width: 1200px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
