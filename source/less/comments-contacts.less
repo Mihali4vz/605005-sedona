@@ -1,0 +1,138 @@
+.comments__contacts {
+  box-shadow: 0 1px 0 0 #d6d6d6;
+}
+
+.comments__contacts-list {
+  padding-bottom: 16px;
+}
+
+.comments__contacts-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.comments__contacts-item--telephone::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 58px;
+  height: 56px;
+  background-image: url("../img/icon-phone.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #e6e6e6;
+}
+
+.comments__contacts-item--mail::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 58px;
+  height: 56px;
+  background-image: url("../img/icon-mail.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #e6e6e6;
+}
+
+.contacts-title {
+  padding-top: 18px;
+  padding-bottom: 20px;
+}
+
+.comments__contacts-text {
+  padding-bottom: 9px;
+  padding-left: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .comments__contacts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    min-width: 648px;
+    box-shadow: none;
+  }
+
+  .contacts-title {
+    padding-bottom: 24px;
+  }
+
+
+  .contacts-title::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .contacts-title::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .comments__contacts-list {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .comments__contacts-item {
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-title {
+    padding-top: 16px;
+  }
+
+  .contacts-title::before,
+  .contacts-title::after {
+    top: 28px;
+    width: 280px;
+  }
+
+  .comments__contacts {
+    min-width: 960px;
+  }
+
+  .comments__contacts-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+  }
+
+  .comments__contacts-item {
+    flex-direction: row;
+    min-width: 400px;
+  }
+
+  .comments__contacts-text {
+    margin-right: 16px;
+    padding-top: 15px;
+    padding-left: 0;
+  }
+
+  .telephone-text {
+    display: none;
+  }
+
+  .comments__contacts-item--telephone::after,
+  .comments__contacts-item--mail::after {
+    top: 0;
+  }
+}

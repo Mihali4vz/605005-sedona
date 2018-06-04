@@ -38,6 +38,7 @@
     "node": "8.11"
   },
   "dependencies": {
+    "grunt-contrib-imagemin": "^2.0.1",
     "normalize.less": "^1.0.0"
   }
 }

@@ -15,7 +15,7 @@
           <ul class="main-nav__list site-list main-nav__list--show">
             <li class="site-list__item">
               <a class="main-nav__link" href="index.html">Главная</a>
-              <button class="site-list__button" type="button" aria-label="Выход"></button>
+              <button class="site-list__button button-hide" type="button" aria-label="Выход"></button>
             </li>
             <li class="site-list__item photo">
               <a class="main-nav__link" href="photo.html">Фото и видео</a>
@@ -60,11 +60,11 @@
                 </li>
                 <li class="comments__name-item">
                   <label class="form-text" for="second-name">Фамилия*:</label>
-                  <input class="comments__text-inputs comments__name-inputs last-name__inputs" type="text" name="second-name" id="second-name" placeholder="Иванов">
+                  <input class="comments__text-inputs comments__name-inputs last-name" type="text" name="second-name" id="second-name" placeholder="Иванов">
                 </li>
                 <li class="comments__name-item">
                   <label class="form-text" for="patronymic">Отчество:</label>
-                  <input class="comments__text-inputs comments__name-inputs last-name__inputs" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+                  <input class="comments__text-inputs comments__name-inputs last-name" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
                 </li>
               </ul>
             </fieldset>
@@ -123,11 +123,11 @@
               <label class="comments__emotions-title form-title" for="emotions">Опишите свои эмоции:</label>
               <textarea class="comments__emotions-text" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
+            <div class="comments__send">
+              <button class="comments__send-button">Отправить отзыв</button>
+              <p class="comments__send-required">* — обязательные поля</p>
+            </div>
           </form>
-        </div>
-        <div class="comments__send">
-          <button class="comments__send-button">Отправить отзыв</button>
-          <p class="comments__send-required">* — обязательные поля</p>
         </div>
       </section>
     </main>
