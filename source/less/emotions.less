@@ -1,46 +1,46 @@
-.comments__emotions {
+.emotions {
   display: flex;
   flex-direction: column;
   padding-right: 6%;
   padding-left: 5.5%;
 }
 
-.comments__emotions-title {
+.emotions__title {
   padding-top: 17px;
   padding-bottom: 18px;
 }
 
-.comments__emotions-text {
+.emotions__text {
   resize: none;
   padding-top: 15px;
   padding-left: 22px;
-  min-height: 146px;
+  min-height: 142px;
   background-color: #f2f2f2;
   border: 0;
 }
 
-.comments__emotions-text::-webkit-input-placeholder {
+.emotions__text::-webkit-input-placeholder {
   font-size: @title-size;
   line-height: @text-height;
   color: #000000;
   font-weight: @title-weight;
 }
 
-.comments__emotions-text:-ms-input-placeholder {
+.emotions__text:-ms-input-placeholder {
   font-size: @title-size;
   line-height: @text-height;
   color: #000000;
   font-weight: @title-weight;
 }
 
-.comments__emotions-text::-ms-input-placeholder {
+.emotions__text::-ms-input-placeholder {
   font-size: @title-size;
   line-height: @text-height;
   color: #000000;
   font-weight: @title-weight;
 }
 
-.comments__emotions-text::placeholder {
+.emotions__text::placeholder {
   font-size: @title-size;
   line-height: @text-height;
   color: #000000;
@@ -48,7 +48,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .comments__emotions {
+  .emotions {
     display: flex;
     position: relative;
     margin-top: 17px;
@@ -60,11 +60,11 @@
     min-width: 648px;
   }
 
-  .comments__emotions-title {
+  .emotions__title {
     padding-bottom: 58px;
   }
 
-  .comments__emotions-title::before {
+  .emotions__title::before {
     content: "";
     position: absolute;
     top: 30px;
@@ -74,7 +74,7 @@
     background-color: #dbdbdb;
   }
 
-  .comments__emotions-title::after {
+  .emotions__title::after {
     content: "";
     position: absolute;
     top: 30px;
@@ -83,15 +83,23 @@
     height: 1px;
     background-color: #dbdbdb;
   }
+
+  .emotions__text {
+    padding-bottom: 5px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .comments__emotions {
+  .emotions {
     min-width: 960px;
   }
 
-  .comments__emotions-title::before,
-  .comments__emotions-title::after {
+  .emotions__title::before,
+  .emotions__title::after {
     width: 280px;
+  }
+
+  .emotions__text {
+    padding-bottom: 7px;
   }
 }

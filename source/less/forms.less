@@ -28,35 +28,14 @@
   line-height: 25px;
 }
 
-.form-field {
-  padding: 0;
-  border: 0;
-}
-
-.comments__title,
-.form-title {
+.comments__title {
   margin: 0 auto;
   text-align: center;
   font-size: @title-size;
   font-weight: @title-weight;
-}
-
-.comments__title {
   display: block;
   padding-top: 36px;
   padding-bottom: 11px;
-}
-
-.form-title {
-  padding-bottom: 23px;
-}
-
-.form-list {
-  margin: 0;
-  padding-right: 6%;
-  padding-left: 5.5%;
-  padding-bottom: 4px;
-  list-style: none;
 }
 
 .comments__text-inputs {
@@ -91,6 +70,69 @@
   font-size: 18px;
   font-weight: @title-weight;
   color: @text-color;
+}
+
+.comments__sights {
+  box-shadow: 0 1px 0 0 #d6d6d6;
+}
+
+.comments__sights-btns[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.comments__sights-btns[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.comments__sights-btns[type="checkbox"] + label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.comments__sights-btns[type="checkbox"] + label:active::before {
+  background-color: #d5d5d5;
+}
+
+.comments__sights-btns[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 17px;
+  width: 23px;
+  height: 16px;
+  background: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.comments__sights-btns[type="checkbox"]:checked + label:active::after {
+  opacity: 0.3;
+}
+
+.comments__sights-title {
+  padding-top: 14px;
+  padding-bottom: 40px;
+  padding-left: 78px;
+  font-size: @title-size;
+  font-weight: @title-weight;
+  text-transform: none;
+}
+
+.comments__sights-list {
+  padding-bottom: 3px;
+}
+
+.comments__sights-caption {
+  padding-top: 18px;
+  padding-bottom: 17px;
 }
 
 .comments__send {
@@ -158,14 +200,50 @@
     margin-left: 7.9%;
   }
 
-  .form-field__title {
-    margin-left: 19%;
-    padding-top: 39px;
-    text-align: left;
+  .comments__sights {
+    position: relative;
+    min-width: 648px;
+    box-shadow: none;
   }
 
-  .form-title {
-    font-size: 21px;
+  .comments__sights-caption::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .comments__sights-caption::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    right: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .comments__sights-caption {
+    padding-top: 14px;
+    width: 340px;
+  }
+
+  .comments__sights-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 41px;
+    padding: 0;
+    padding-top: 26px;
+    padding-bottom: 3px;
+  }
+
+  .comments__sights-item {
+    margin-bottom: 7px;
+    margin-left: 52px;
+    min-width: 209px;
   }
 
   .comments__send {
@@ -203,12 +281,35 @@
     margin: 0;
   }
 
-  .form-field__title {
-    margin-left: 83px;
-  }
-
   .comments__text-inputs {
     min-width: 316px;
+  }
+
+  .comments__sights {
+    display: block;
+    width: 960px;
+  }
+
+  .comments__sights-list {
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .comments__sights-item {
+    margin-left: 0;
+    min-width: 170px;
+  }
+
+  .comments__sights-title {
+    padding-left: 82px;
+  }
+
+  .comments__sights-caption::before,
+  .comments__sights-caption::after {
+    width: 280px;
   }
 
   .comments__send {

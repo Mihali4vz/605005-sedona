@@ -1,19 +1,20 @@
-.comments__impress {
+.impress {
   padding-bottom: 11px;
   box-shadow: 0 1px 0 0 #d6d6d6;
 }
 
-.impress-title {
-  padding-top: 18px;
+.impress__caption {
+  padding-top: 20px;
+  padding-bottom: 22px;
 }
 
-.comments__impress-btns[type="radio"] + label {
+.impress-btns[type="radio"] + label {
   display: block;
   position: relative;
   cursor: pointer;
 }
 
-.comments__impress-btns[type="radio"] + label::before {
+.impress-btns[type="radio"] + label::before {
   content: "";
   position: absolute;
   top: 0;
@@ -24,15 +25,15 @@
   border-radius: 50%;
 }
 
-.comments__impress-btns[type="radio"] + label:hover::before {
+.impress-btns[type="radio"] + label:hover::before {
   background-color: #e5e5e5;
 }
 
-.comments__impress-btns[type="radio"] + label:active::before {
+.impress-btns[type="radio"] + label:active::before {
   background-color: #d5d5d5;
 }
 
-.comments__impress-btns[type="radio"]:checked + label::after {
+.impress-btns[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
   top: 18px;
@@ -44,11 +45,11 @@
   z-index: 1;
 }
 
-.comments__impress-btns[type="radio"]:checked + label:active::after {
+.impress-btns[type="radio"]:checked + label:active::after {
   background: #a4a4a4;
 }
 
-.comments__impress-title {
+.impress-title {
   padding-top: 14px;
   padding-bottom: 29px;
   padding-left: 78px;
@@ -58,7 +59,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .comments__impress {
+  .impress {
     order: -1;
     margin: 0;
     padding-bottom: 0;
@@ -66,41 +67,41 @@
     box-shadow: none;
   }
 
-  .impress-title {
+  .impress__caption {
     margin: 0;
-    padding-top: 39px;
+    padding-top: 40px;
     text-align: left;
   }
 
-  .comments__impress-list {
+  .impress-list {
     padding-top: 36px;
     padding-bottom: 0;
     padding-left: 0;
   }
 
-  .comments__impress-item {
+  .impress-item {
     padding-bottom: 9px;
   }
 
-  .comments__impress-item:last-child {
+  .impress-item:last-child {
     padding-bottom: 0;
   }
 
-  .comments__impress-title {
+  .impress-title {
     padding-left: 75px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .comments__impress {
+  .impress {
     display: block;
   }
 
-  .impress-title {
+  .impress__caption {
     margin-left: 81px;
   }
 
-  .comments__impress-list {
+  .impress-list {
     padding-left: 5px;
   }
 }

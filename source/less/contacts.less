@@ -1,19 +1,19 @@
-.comments__contacts {
+.contacts {
   box-shadow: 0 1px 0 0 #d6d6d6;
 }
 
-.comments__contacts-list {
+.contacts__list {
   padding-bottom: 16px;
 }
 
-.comments__contacts-item {
+.contacts__item {
   display: flex;
   flex-direction: column;
   position: relative;
   margin-bottom: 12px;
 }
 
-.comments__contacts-item--telephone::after {
+.contacts__item--telephone::after {
   content: "";
   position: absolute;
   top: 35px;
@@ -26,7 +26,7 @@
   background-color: #e6e6e6;
 }
 
-.comments__contacts-item--mail::after {
+.contacts__item--mail::after {
   content: "";
   position: absolute;
   top: 35px;
@@ -39,18 +39,18 @@
   background-color: #e6e6e6;
 }
 
-.contacts-title {
+.contacts__title {
   padding-top: 18px;
   padding-bottom: 20px;
 }
 
-.comments__contacts-text {
+.contacts__text {
   padding-bottom: 9px;
   padding-left: 22px;
 }
 
 @media (min-width: @tablet-width) {
-  .comments__contacts {
+  .contacts {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -60,12 +60,11 @@
     box-shadow: none;
   }
 
-  .contacts-title {
+  .contacts__title {
     padding-bottom: 24px;
   }
 
-
-  .contacts-title::before {
+  .contacts__title::before {
     content: "";
     position: absolute;
     top: 30px;
@@ -75,7 +74,7 @@
     background-color: #dbdbdb;
   }
 
-  .contacts-title::after {
+  .contacts__title::after {
     content: "";
     position: absolute;
     top: 30px;
@@ -85,54 +84,54 @@
     background-color: #dbdbdb;
   }
 
-  .comments__contacts-list {
+  .contacts__list {
     padding-right: 0;
     padding-left: 0;
   }
 
-  .comments__contacts-item {
+  .contacts__item {
     margin-bottom: 23px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .contacts-title {
+  .contacts__title {
     padding-top: 16px;
   }
 
-  .contacts-title::before,
-  .contacts-title::after {
+  .contacts__title::before,
+  .contacts__title::after {
     top: 28px;
     width: 280px;
   }
 
-  .comments__contacts {
+  .contacts {
     min-width: 960px;
   }
 
-  .comments__contacts-list {
+  .contacts__list {
     display: flex;
     justify-content: space-between;
     margin-top: 52px;
   }
 
-  .comments__contacts-item {
+  .contacts__item {
     flex-direction: row;
     min-width: 400px;
   }
 
-  .comments__contacts-text {
+  .contacts__text {
     margin-right: 16px;
     padding-top: 15px;
     padding-left: 0;
   }
 
-  .telephone-text {
+  .contacts__telephone-text {
     display: none;
   }
 
-  .comments__contacts-item--telephone::after,
-  .comments__contacts-item--mail::after {
+  .contacts__item--telephone::after,
+  .contacts__item--mail::after {
     top: 0;
   }
 }
