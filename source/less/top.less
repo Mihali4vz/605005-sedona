@@ -12,7 +12,7 @@
   }
 }
 
-.top-photo {
+.page-header__top--photo {
   position: relative;
   padding-top: 56px;
   height: 158px;
@@ -41,7 +41,7 @@
   z-index: 100;
 }
 
-.top-photo::after {
+.page-header__top--photo::after {
   content: "";
   position: absolute;
   top: 188px;
@@ -64,7 +64,7 @@
   height: 210px;
 }
 
-.sedona-text {
+.page-header__top-image {
   margin: 0 auto;
   padding-top: 52px;
   width: 229px;
@@ -104,7 +104,7 @@
     }
   }
 
-  .top-photo {
+  .page-header__top--photo {
     padding-top: 0;
     height: 290px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -124,7 +124,7 @@
     background-size: 156% 57px;
   }
 
-  .top-photo::after {
+  .page-header__top--photo::after {
     top: 291px;
     height: 57px;
     background-image: url("../img/bg-intro-triangle-tablet.svg");
@@ -137,7 +137,7 @@
     height: 344px;
   }
 
-  .sedona-text {
+  .page-header__top-image {
     padding-top: 94px;
     width: 458px;
     height: 78px;
@@ -160,7 +160,7 @@
     }
   }
 
-  .top-photo {
+  .page-header__top--photo {
     height: 300px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: cover 300px;
@@ -175,14 +175,10 @@
     background-size: auto 57px;
   }
 
-  .top-photo::after {
+  .page-header__top--photo::after {
     top: 301px;
     background-image: url("../img/bg-intro-triangle-desktop.svg");
     background-size: auto 57px;
-  }
-
-  .top__decoration {
-    display: none;
   }
 
   .photo__logo-image {
@@ -193,7 +189,7 @@
     padding-top: 78px;
   }
 
-  .sedona-text {
+  .page-header__top-image {
     padding-top: 100px;
   }
 }

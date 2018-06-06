@@ -1,4 +1,16 @@
-.map-image {
+.map {
+  position: relative;
+}
+
+.map__window {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border: 0;
+  z-index: 10;
+}
+
+.map__image {
   position: absolute;
   top: 0;
   left: 0;
@@ -9,11 +21,7 @@
   z-index: 1;
 }
 
-.map-wrapper {
-  position: relative;
-}
-
-.map-wrapper::after {
+.map::after {
   content: "";
   position: absolute;
   top: 159px;
@@ -26,14 +34,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .map-wrapper::after {
+  .map::after {
     top: 166px;
     left: 48%;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .map-wrapper::after {
+  .map::after {
     top: 164px;
     left: 49%;
   }
