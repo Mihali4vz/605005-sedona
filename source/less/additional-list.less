@@ -4,6 +4,9 @@
 }
 
 .additional-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   background-color: #eeeeee;
 }
 
@@ -24,26 +27,20 @@
   line-height: 21px;
 }
 
-.additional-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .additional-list__title {
   margin: 0;
   padding: 0;
+  padding-top: 28px;
   font-size: @title-size;
   font-weight: @title-weight;
   line-height: @text-height;
 }
 
-.additional-list__title {
-  padding-top: 28px;
-}
-
 @media (min-width: @tablet-width) {
   .additional-list__title {
+    padding-top: 45px;
+    padding-right: 23%;
+    padding-left: 23%;
     font-size: 21px;
     font-weight: @title-weight;
     line-height: 26px;
@@ -53,12 +50,6 @@
     display: flex;
     flex-direction: row;
     padding: 0;
-  }
-
-  .additional-list__title {
-    padding-top: 45px;
-    padding-right: 23%;
-    padding-left: 23%;
   }
 
   .additional-list__number--add {
