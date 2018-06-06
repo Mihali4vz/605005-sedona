@@ -1,0 +1,28 @@
+.item-rating__button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.item-rating__number {
+  padding-left: 10px;
+  font-weight: @title-weight;
+  line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .item-rating__number {
+    padding-left: 6px;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .item-rating__number {
+    color: @nav-color;
+  }
+
+  .item-rating__picture {
+    fill: #ffffff;
+  }
+}
