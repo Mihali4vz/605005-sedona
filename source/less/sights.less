@@ -1,0 +1,150 @@
+.sights {
+  padding: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #d6d6d6;
+}
+
+.sights__btns[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.sights__btns[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.sights__btns[type="checkbox"] + label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.sights__btns[type="checkbox"] + label:active::before {
+  background-color: #d5d5d5;
+}
+
+.sights__btns[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 17px;
+  width: 23px;
+  height: 16px;
+  background: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.sights__btns[type="checkbox"]:checked + label:active::after {
+  opacity: 0.3;
+}
+
+.sights__title {
+  padding-top: 14px;
+  padding-bottom: 40px;
+  padding-left: 78px;
+  font-size: @title-size;
+  font-weight: @title-weight;
+  text-transform: none;
+}
+
+.sights__list {
+  margin: 0;
+  padding-right: 6%;
+  padding-left: 6.3%;
+  padding-bottom: 4px;
+  list-style: none;
+}
+
+.sights__caption {
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  text-align: center;
+  font-size: @title-size;
+  font-weight: @title-weight;
+}
+
+@media (min-width: @tablet-width) {
+  .sights {
+    position: relative;
+    min-width: 648px;
+    box-shadow: none;
+  }
+
+  .sights__caption::before {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .sights__caption::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    right: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .sights__caption {
+    padding-top: 14px;
+    width: 340px;
+    font-size: 21px;
+  }
+
+  .sights__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 41px;
+    padding: 0;
+    padding-top: 26px;
+    padding-bottom: 3px;
+  }
+
+  .sights__item {
+    margin-bottom: 7px;
+    margin-left: 52px;
+    min-width: 209px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sights {
+    display: block;
+    width: 960px;
+  }
+
+  .sights__list {
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .sights__item {
+    margin-left: 0;
+    min-width: 170px;
+  }
+
+  .sights__title {
+    padding-left: 82px;
+  }
+
+  .sights__caption::before,
+  .sights__caption::after {
+    width: 280px;
+  }
+}

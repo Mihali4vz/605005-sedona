@@ -51,9 +51,9 @@
         </header>
         <div class="comments__container">
           <form class="comments__form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="authorization form-field">
-              <h2 class="authorization__title form-field__title">Представьтесь:</h2>
-              <ul class="authorization__list form-list">
+            <fieldset class="authorization">
+              <h2 class="authorization__title">Представьтесь:</h2>
+              <ul class="authorization__list">
                 <li class="authorization__item">
                   <label for="first-name">Имя*:</label>
                   <input class="comments__text-inputs authorization__inputs authorization__inputs--name" type="text" name="username" id="first-name" placeholder="Петр">
@@ -68,9 +68,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="contacts form-field">
-              <h2 class="contacts__title form-field__title">Контактная информация:</h2 >
-              <ul class="contacts__list form-list">
+            <fieldset class="contacts">
+              <h2 class="contacts__title">Контактная информация:</h2 >
+              <ul class="contacts__list">
                 <li class="contacts__item contacts__item--telephone">
                   <label class="contacts__text" for="telephone"><span class="contacts__telephone-text">Контактный</span> телефон*:</label>
                   <input class="comments__text-inputs" type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" id="telephone" placeholder="Введите телефон" required>
@@ -81,46 +81,46 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="impress form-field">
-              <h2  class="impress__caption form-field__title">Ваше общее впечатление:</h2 >
-              <ul class="impress-list form-list">
-                <li class="impress-item">
-                  <input class="impress-btns visually-hidden" type="radio" name="impress-value" value="impress-positive" id="positive" checked>
-                  <label class="impress-title" for="positive">Скорее положительное</label>
+            <fieldset class="impress">
+              <h2 class="impress__caption">Ваше общее впечатление:</h2 >
+              <ul class="impress__list">
+                <li class="impress__item">
+                  <input class="impress__btns visually-hidden" type="radio" name="impress-value" value="impress-positive" id="positive" checked>
+                  <label class="impress__title" for="positive">Скорее положительное</label>
                 </li>
-                <li class="impress-item">
-                  <input class="impress-btns visually-hidden" type="radio" name="impress-value" value="impress-negative" id="negative">
-                  <label class="impress-title" for="negative">Скорее отрицательное</label>
+                <li class="impress__item">
+                  <input class="impress__btns visually-hidden" type="radio" name="impress-value" value="impress-negative" id="negative">
+                  <label class="impress__title" for="negative">Скорее отрицательное</label>
                 </li>
-                <li class="impress-item">
-                  <input class="impress-btns visually-hidden" type="radio" name="impress-value" value="impress-neutral" id="neutral">
-                  <label class="impress-title" for="neutral">Затрудняюсь ответить</label>
+                <li class="impress__item">
+                  <input class="impress__btns visually-hidden" type="radio" name="impress-value" value="impress-neutral" id="neutral">
+                  <label class="impress__title" for="neutral">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="comments__sights form-field">
-              <h2  class="comments__sights-caption form-field__title">Посещенные достопримечательности:</h2 >
-              <ul class="comments__sights-list form-list">
-                <li class="comments__sights-item">
-                  <input class="comments__sights-btns visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
-                  <label class="comments__sights-title" for="bridge">Мост Дьявола</label>
+            <fieldset class="sights">
+              <h2  class="sights__caption">Посещенные достопримечательности:</h2 >
+              <ul class="sights__list">
+                <li class="sights__item">
+                  <input class="sights__btns visually-hidden" type="checkbox" name="bridge" id="bridge" checked>
+                  <label class="sights__title" for="bridge">Мост Дьявола</label>
                 </li>
-                <li class="comments__sights-item">
-                  <input class="comments__sights-btns visually-hidden" type="checkbox" name="bell" id="bell" checked>
-                  <label class="comments__sights-title" for="bell">Гора-Колокол</label>
+                <li class="sights__item">
+                  <input class="sights__btns visually-hidden" type="checkbox" name="bell" id="bell" checked>
+                  <label class="sights__title" for="bell">Гора-Колокол</label>
                 </li>
-                <li class="comments__sights-item">
-                  <input class="comments__sights-btns visually-hidden" type="checkbox" name="park" id="park" checked>
-                  <label class="comments__sights-title" for="park">Слайд-парк</label>
+                <li class="sights__item">
+                  <input class="sights__btns visually-hidden" type="checkbox" name="park" id="park" checked>
+                  <label class="sights__title" for="park">Слайд-парк</label>
                 </li>
-                <li class="comments__sights-item">
-                  <input class="comments__sights-btns visually-hidden" type="checkbox" name="cliffs" id="cliffs">
-                  <label class="comments__sights-title" for="cliffs">Красные скалы</label>
+                <li class="sights__item">
+                  <input class="sights__btns visually-hidden" type="checkbox" name="cliffs" id="cliffs">
+                  <label class="sights__title" for="cliffs">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
             <div class="emotions">
-              <label class="emotions__title form-field__title" for="emotions">Опишите свои эмоции:</label>
+              <label class="emotions__title" for="emotions">Опишите свои эмоции:</label>
               <textarea class="emotions__text" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
             <div class="comments__send">
