@@ -1,0 +1,97 @@
+.additional-list__wrapper {
+  padding-right: 6.25%;
+  padding-left: 6.25%;
+}
+
+.additional-list {
+  background-color: #eeeeee;
+}
+
+.additional-list__number,
+.additional-list__text {
+  color: @text-color;
+}
+
+.additional-list__number--add {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.additional-list__text {
+  margin: 0;
+  padding-bottom: 25px;
+  line-height: 21px;
+}
+
+.additional-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.additional-list__title {
+  margin: 0;
+  padding: 0;
+  font-size: @title-size;
+  font-weight: @title-weight;
+  line-height: @text-height;
+}
+
+.additional-list__title {
+  padding-top: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-list__title {
+    font-size: 21px;
+    font-weight: @title-weight;
+    line-height: 26px;
+  }
+
+  .additional-list__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .additional-list__title {
+    padding-top: 45px;
+    padding-right: 23%;
+    padding-left: 23%;
+  }
+
+  .additional-list__number--add {
+    padding-top: 7px;
+  }
+
+  .additional-list__text {
+    padding-top: 5px;
+    padding-bottom: 43px;
+    padding-right: 21%;
+    padding-left: 21%;
+  }
+
+  .additional-list__text--places {
+    padding-right: 19%;
+    padding-left: 19%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-list__text {
+    padding-bottom: 64px;
+    padding-right: 13%;
+    padding-left: 13%;
+  }
+
+  .additional-list__text--road {
+    padding-right: 16%;
+    padding-left: 16%;
+  }
+
+  .additional-list__title {
+    padding-right: 30%;
+    padding-left: 30%;
+  }
+}
