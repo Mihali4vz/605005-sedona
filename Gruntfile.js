@@ -24,7 +24,8 @@ module.exports = function(grunt) {
     less: {
       style: {
         files: {
-          "build/css/style.css": "source/less/style.less"
+          "build/css/style.css": "source/less/style.less",
+          "source/css/style.css": "source/less/style.less"
         }
       }
     },
@@ -44,7 +45,8 @@ module.exports = function(grunt) {
           report: "gzip"
         },
         files: {
-          "build/css/style.min.css": ["build/css/style.css"]
+          "build/css/style.min.css": ["build/css/style.css"],
+          "source/css/style.min.css": "source/css/style.css"
         }
       }
     },
