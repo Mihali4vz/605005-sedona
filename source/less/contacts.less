@@ -1,0 +1,148 @@
+.contacts {
+  padding: 0;
+  border: 0;
+  box-shadow: 0 1px 0 0 #d6d6d6;
+}
+
+.contacts__list {
+  margin: 0;
+  padding-bottom: 16px;
+  padding-right: 6%;
+  padding-left: 6.3%;
+  list-style: none;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.contacts__item--telephone::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 58px;
+  height: 56px;
+  background-image: url("../img/icon-phone.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #e6e6e6;
+}
+
+.contacts__item--mail::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 58px;
+  height: 56px;
+  background-image: url("../img/icon-mail.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #e6e6e6;
+}
+
+.contacts__title {
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: @title-size;
+  font-weight: @title-weight;
+}
+
+.contacts__text {
+  padding-bottom: 9px;
+  padding-left: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    min-width: 648px;
+    box-shadow: none;
+  }
+
+  .contacts__title {
+    padding-bottom: 24px;
+    font-size: 21px;
+  }
+
+  .contacts__title::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .contacts__title::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .contacts__list {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .contacts__item {
+    margin-bottom: 23px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__title {
+    padding-top: 16px;
+  }
+
+  .contacts__title::before,
+  .contacts__title::after {
+    top: 28px;
+    width: 280px;
+  }
+
+  .contacts {
+    min-width: 960px;
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+  }
+
+  .contacts__item {
+    flex-direction: row;
+    min-width: 400px;
+  }
+
+  .contacts__text {
+    margin-right: 16px;
+    padding-top: 15px;
+    padding-left: 0;
+  }
+
+  .contacts__telephone-text {
+    display: none;
+  }
+
+  .contacts__item--telephone::after,
+  .contacts__item--mail::after {
+    top: 0;
+  }
+}

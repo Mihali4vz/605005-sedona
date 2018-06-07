@@ -1,0 +1,122 @@
+.impress {
+  padding: 0;
+  border: 0;
+  padding-bottom: 11px;
+  box-shadow: 0 1px 0 0 #d6d6d6;
+}
+
+.impress__caption {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  text-align: center;
+  font-size: @title-size;
+  font-weight: @title-weight;
+}
+
+.impress__list {
+  margin: 0;
+  padding-right: 6%;
+  padding-left: 6.3%;
+  padding-bottom: 4px;
+  list-style: none;
+}
+
+.impress__btns[type="radio"] + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.impress__btns[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.impress__btns[type="radio"] + label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.impress__btns[type="radio"] + label:active::before {
+  background-color: #d5d5d5;
+}
+
+.impress__btns[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 21px;
+  height: 21px;
+  background-color: #333333;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.impress__btns[type="radio"]:checked + label:active::after {
+  background: #a4a4a4;
+}
+
+.impress__title {
+  padding-top: 14px;
+  padding-bottom: 29px;
+  padding-left: 78px;
+  font-size: @title-size;
+  font-weight: @title-weight;
+  text-transform: none;
+}
+
+@media (min-width: @tablet-width) {
+  .impress {
+    order: -1;
+    margin: 0;
+    padding-bottom: 0;
+    width: 49%;
+    box-shadow: none;
+  }
+
+  .impress__caption {
+    margin: 0;
+    padding-top: 40px;
+    font-size: 21px;
+    text-align: left;
+  }
+
+  .impress__list {
+    padding-top: 36px;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .impress__item {
+    padding-bottom: 9px;
+  }
+
+  .impress__item:last-child {
+    padding-bottom: 0;
+  }
+
+  .impress__title {
+    padding-left: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impress {
+    display: block;
+  }
+
+  .impress__caption {
+    margin-left: 81px;
+  }
+
+  .impress__list {
+    padding-left: 5px;
+  }
+}

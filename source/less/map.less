@@ -1,0 +1,48 @@
+.map {
+  position: relative;
+}
+
+.map__window {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border: 0;
+  z-index: 10;
+}
+
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 350px;
+  z-index: 1;
+}
+
+.map::after {
+  content: "";
+  position: absolute;
+  top: 159px;
+  left: 46%;
+  height: 27px;
+  width: 27px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+@media (min-width: @tablet-width) {
+  .map::after {
+    top: 166px;
+    left: 48%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map::after {
+    top: 164px;
+    left: 49%;
+  }
+}

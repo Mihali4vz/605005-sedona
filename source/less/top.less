@@ -2,116 +2,149 @@
   display: flex;
   position: relative;
   height: 445px;
-  background-image:
-    url("../img/bg-intro-triangle-mobile.svg"),
-    url("../img/bg-back-mobile@1x.jpg");
-  background-size:
-    100%,
-    auto 389px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: auto 389px;
   background-repeat: no-repeat;
-  background-position:
-    center 100%,
-    center 100%;
+  background-position: center 100%;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image:
-      url("../img/bg-intro-triangle-mobile.svg"),
-      url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
-.top__photo {
+.page-header__top--photo {
   position: relative;
   padding-top: 56px;
   height: 158px;
-  background-image:
-    url("../img/bg-intro-triangle-mobile.svg"),
-    url("../img/bg-back-mobile@1x.jpg");
-  background-size:
-    100%,
-    auto 389px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: auto 389px;
   background-repeat: no-repeat;
-  background-position:
-    center 100%,
-    center 100%;
+  background-position: center 100%;
   background-clip: content-box;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image:
-      url("../img/bg-intro-triangle-mobile.svg"),
-      url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
-.main__sedona-text {
-  margin: 0 auto;
-  padding-top: 146px;
-  width: 280px;
-  height: 210px;
-  padding-right: 6%;
-  padding-left: 6%;
+.page-header__top::after {
+  content: "";
+  position: absolute;
+  top: 419px;
+  left: 0;
+  width: 100%;
+  height: 26.111px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-size: 100% 26.111px;
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  z-index: 100;
 }
 
-.photo__sedona-text {
+.page-header__top--photo::after {
+  content: "";
+  position: absolute;
+  top: 188px;
+  left: 0;
+  width: 100%;
+  height: 26.111px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-size: 100% 26.111px;
+  background-repeat: no-repeat;
+  background-position: center 100%;
+  z-index: 100;
+}
+
+.page-header__top-text {
+  margin: 0 auto;
+  padding-top: 146px;
+  padding-right: 6%;
+  padding-left: 6%;
+  width: 280px;
+  height: 210px;
+}
+
+.page-header__top-image {
   margin: 0 auto;
   padding-top: 52px;
   width: 229px;
   height: 39px;
 }
 
+.page-header__toggle {
+  position: absolute;
+  top: 17px;
+  right: 6%;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon-menu.svg");
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.page-header__toggle--hide {
+  display: none;
+}
+
+
 @media (min-width: @tablet-width) {
   .page-header__top {
     position: static;
     height: 515px;
-    background-image:
-      url("../img/bg-intro-triangle-tablet.svg"),
-      url("../img/bg-back-tablet@1x.jpg");
-    background-size:
-      100% 57px,
-      100% 520px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: 100% 520px;
     background-repeat: no-repeat;
-    background-position:
-      center 100%,
-      100%;
+    background-position: 100%;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image:
-        url("../img/bg-intro-triangle-tablet.svg"),
-        url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
-  .top__photo {
+  .page-header__top--photo {
     padding-top: 0;
     height: 290px;
-    background-image:
-      url("../img/bg-intro-triangle-tablet.svg"),
-      url("../img/bg-back-tablet@1x.jpg");
-    background-size:
-      100% 57px,
-      cover 290px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover 290px;
     background-repeat: no-repeat;
-    background-position:
-      center 100%,
-      center 100%;
+    background-position: center 100%;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image:
-        url("../img/bg-intro-triangle-tablet.svg"),
-        url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-back-tablet@2x.jpg");
     }
   }
 
-  .main__sedona-text {
+  .page-header__top::after {
+    top: 516px;
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-size: 156% 57px;
+  }
+
+  .page-header__top--photo::after {
+    top: 291px;
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background-size: 156% 57px;
+  }
+
+  .page-header__top-text {
     padding-top: 77px;
     width: 465px;
     height: 344px;
   }
 
-  .photo__sedona-text {
+  .page-header__top-image {
     padding-top: 94px;
     width: 458px;
     height: 78px;
+  }
+
+  .page-header__toggle {
+    display: none;
   }
 }
 
@@ -119,49 +152,40 @@
   .page-header__top {
     max-width: 1200px;
     margin: 0 auto;
-    background-image:
-      url("../img/bg-intro-triangle-desktop.svg"),
-      url("../img/bg-back-desktop@1x.jpg");
-    background-size:
-      100% 58px,
-      100% 520px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: 100% 520px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image:
-        url("../img/bg-intro-triangle-desktop.svg"),
-        url("../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
-  .top__photo {
+  .page-header__top--photo {
     height: 300px;
-    background-image:
-      url("../img/bg-intro-triangle-desktop.svg"),
-      url("../img/bg-back-desktop@1x.jpg");
-    background-size:
-      100% 58px,
-      cover 300px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover 300px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image:
-        url("../img/bg-intro-triangle-desktop.svg"),
-        url("../img/bg-back-desktop@2x.jpg");
+      background-image: url("../img/bg-back-desktop@2x.jpg");
     }
   }
 
-  .top__decoration {
-    display: none;
+  .page-header__top::after {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-size: auto 57px;
   }
 
-  .photo__logo-image {
-    display: block;
+  .page-header__top--photo::after {
+    top: 301px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    background-size: auto 57px;
   }
 
-  .main__sedona-text {
+  .page-header__top-text {
     padding-top: 78px;
   }
 
-  .photo__sedona-text {
+  .page-header__top-image {
     padding-top: 100px;
   }
 }

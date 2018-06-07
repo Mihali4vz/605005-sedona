@@ -4,128 +4,23 @@
 }
 
 .reasons__header {
-  max-width: 505px;
   margin: 0 auto;
-  padding-top: 38px;
+  padding-top: 37px;
   padding-right: 9%;
   padding-left: 9%;
+  max-width: 505px;
   text-align: center;
   background-color: @main-backcolor;
 }
 
 .reasons__intro {
   margin: 0;
-  margin-top: 23px;
+  margin-top: 25px;
   margin-bottom: 4px;
-}
-
-.main-reason {
-  position: relative;
-  padding-top: 35px;
-  padding-bottom: 10px;
-  padding-right: 40px;
-  padding-left: 70px;
-  list-style: none;
-  background-color: @main-backcolor;
-}
-
-.feature-title {
-  margin: 0;
-  padding: 0;
-  padding-top: 18px;
-  padding-bottom: 10px;
-}
-
-.main-reason__text {
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 27px;
-  line-height: 21px;
-}
-
-.main-reasons {
-  height: 451px;
-}
-
-.true-town {
-  height: 490px;
-  background-image: url("../img/bg-triangle.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center 0;
-}
-
-.advantage-list__item-container {
-  color: @nav-color;
-  background-color: @nav-backcolor;
-}
-
-.advantage-list__item-wrapper {
-  text-align: center;
-  box-shadow: 0 1px 0 0 #d6d6d6;
-}
-
-.tourist-few {
-  box-shadow: none;
-}
-
-.additional-list__wrapper {
-  padding-right: 36px;
-  padding-left: 36px;
-}
-
-.additional-list {
-  background-color: @reasons-backcolor;
-}
-
-.reasons-city {
-  background-image: url("../img/main-city-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 260px;
-  background-position: 0 100%;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/main-city-mobile@2x.jpg");
-  }
-}
-
-.reasons-bridge {
-  background-image: url("../img/main-bridge-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 260px;
-  background-position: 0 100%;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/main-bridge-mobile@2x.jpg");
-  }
-}
-
-.text {
   color: @text-color;
 }
 
-.number {
-  margin: 0;
-  padding-top: 5px;
-  padding-bottom: 15px;
-}
-
-.addl-reasons__text {
-  margin: 0;
-  padding-bottom: 25px;
-  line-height: 21px;
-}
-
-.reasons__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.reasons__slogan,
-.feature-title,
-.main-reasons__title,
-.addl-reasons__title {
+.reasons__slogan {
   margin: 0;
   padding: 0;
   font-size: @title-size;
@@ -133,74 +28,10 @@
   line-height: @text-height;
 }
 
-.addl-reasons__title {
-  padding-top: 28px;
-}
-
-.main-reasons__title {
-  padding-top: 40px;
-}
-
-.true-town__title {
-  padding-top: 78px;
-}
-
-.main-reasons__number {
-  margin: 0;
-  padding: 0;
-  padding-top: 10px;
-  line-height: 21px;
-}
-
-.main-reasons__text {
-  margin: 0;
-  padding: 0;
-  padding-top: 15px;
-  padding-right: 24px;
-  padding-left: 24px;
-  line-height: 21px;
-}
-
-.habit-feature::before {
-  content: "";
-  position: absolute;
-  top: 6%;
-  left: 20px;
-  height: 40px;
-  width: 40px;
-  background-image: url("../img/icon-house.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.souvenir-feature::before {
-  content: "";
-  position: absolute;
-  top: 38%;
-  left: 23px;
-  height: 40px;
-  width: 40px;
-  background-image: url("../img/icon-gift.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.food-feature::before {
-  content: "";
-  position: absolute;
-  top: 65%;
-  left: 20px;
-  height: 40px;
-  width: 40px;
-  background-image: url("../img/icon-burger.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 @media (min-width: @tablet-width) {
   .reasons {
-    width: auto;
     margin: 0;
+    width: auto;
   }
 
   .reasons__header {
@@ -209,261 +40,22 @@
   }
 
   .reasons__intro {
-    margin-top: 25px;
-  }
-
-  .advantage-list__item-container {
-    display: flex;
-    flex-direction: row;
-    background-size: 66.5% 256px;
-    height: 256px;
-  }
-
-  .bridge-container {
-    flex-direction: row-reverse;
-  }
-
-  .main-reasons {
-    height: 256px;
-    width: 33.5%;
-    padding: 0;
-  }
-
-  .reasons-city {
-    background-image: url("../img/main-city-tablet@1x.jpg");
-    background-position: right;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/main-city-tablet@2x.jpg");
-    }
-  }
-
-  .reasons-bridge {
-    background-image: url("../img/main-bridge-tablet@1x.jpg");
-    background-position: left;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/main-bridge-tablet@2x.jpg");
-    }
-  }
-
-  .reasons__slogan,
-  .feature-title,
-  .main-reasons__title,
-  .addl-reasons__title {
-    font-size: 21px;
-    font-weight: @title-weight;
-    line-height: 26px;
+    margin-top: 26px;
   }
 
   .reasons__slogan {
     display: inline-block;
-    padding-top: 6px;
-  }
-
-  .main-reason {
-    position: static;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-  }
-
-  .main-reason__features {
-    width: 33.33333%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding-top: 147px;
-    text-align: center;
-  }
-
-  .main-reasons__title {
-    padding-top: 45px;
-    padding-left: 20.7%;
-    padding-right: 20.5%;
-  }
-
-
-  .main-reasons__text,
-  .main-reason__text {
-    padding-left: 18%;
-    padding-right: 18%;
-  }
-
-  .main-reasons__text {
-    padding-top: 21px;
-  }
-
-  .devil-bridge__text {
-    padding-top: 22px;
-  }
-
-  .food-text {
-    padding-left: 19%;
-    padding-right: 19%;
-  }
-
-  .main-reason__text {
-    padding-bottom: 61px;
-  }
-
-  .true-town {
-    background-image: none;
-  }
-
-  .feature-title {
-    padding-top: 13px;
-    padding-bottom: 5px;
-  }
-
-  .souvenir-feature {
-    order: 1;
-  }
-
-  .habit-feature,
-  .souvenir-feature,
-  .food-feature {
-    position: relative;
-  }
-
-  .habit-feature::before,
-  .souvenir-feature::before,
-  .food-feature::before {
-    top: 60px;
-    height: 72px;
-    width: 75px;
-  }
-
-  .habit-feature::before {
-    left: 36%;
-  }
-
-  .food-feature::before {
-    left: 36%;
-  }
-
-  .souvenir-feature::before {
-    left: 38%;
-  }
-
-  .additional-list__wrapper {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .another-list__item {
-    width: 33.33333%;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-
-  .advantage-list__item-wrapper {
-    box-shadow: none;
-  }
-
-  .addl-reasons__title {
-    padding-top: 45px;
-    padding-right: 23%;
-    padding-left: 23%;
-  }
-
-  .number {
-    padding-top: 7px;
-  }
-
-  .addl-reasons__text {
     padding-top: 5px;
-    padding-bottom: 43px;
-    padding-right: 21%;
-    padding-left: 21%;
-  }
-
-  .places-text {
-    padding-right: 19%;
-    padding-left: 19%;
+    font-size: 21px;
+    font-weight: @title-weight;
+    line-height: 26px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reasons {
-    max-width: 1200px;
+    display: block;
     margin: 0 auto;
-  }
-
-  .main-reason__text {
-    padding-bottom: 82px;
-  }
-
-  .main-reasons__title {
-    padding-top: 53px;
-    padding-right: 31%;
-    padding-left: 31.5%;
-  }
-
-  .main-reasons__text {
-    padding-top: 20px;
-    padding-right: 14%;
-    padding-left: 15%;
-  }
-
-  .reasons-city {
-    background-image: url("../img/main-city-desktop@1x.jpg");
-    background-size: 800px auto;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/main-city-desktop@2x.jpg");
-    }
-  }
-
-  .reasons-bridge {
-    background-image: url("../img/main-bridge-desktop@1x.jpg");
-    background-size: 800px auto;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/main-bridge-desktop@2x.jpg");
-    }
-  }
-
-  .devil-bridge__text {
-    padding-right: 23%;
-    padding-left: 22%;
-  }
-
-  .habit-feature::before,
-  .food-feature::before {
-    left: 41%;
-  }
-
-  .souvenir-feature::before {
-    left: 43%;
-  }
-
-  .food-text {
-    padding-right: 12%;
-    padding-left: 12%;
-  }
-
-  .souvenir-text {
-    padding-right: 20%;
-    padding-left: 20%;
-    white-space: pre-line;
-  }
-
-  .addl-reasons__text {
-    padding-right: 13%;
-    padding-left: 13%;
-    padding-bottom: 64px;
-  }
-
-  .road-text {
-    padding-right: 15%;
-    padding-left: 15%;
-  }
-
-  .addl-reasons__title {
-    padding-right: 30%;
-    padding-left: 30%;
+    max-width: 1200px;
   }
 }

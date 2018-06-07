@@ -1,0 +1,110 @@
+.emotions {
+  display: flex;
+  flex-direction: column;
+  padding-right: 6%;
+  padding-left: 5.5%;
+}
+
+.emotions__title {
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  text-align: center;
+  font-size: @title-size;
+  font-weight: @title-weight;
+}
+
+.emotions__text {
+  resize: none;
+  padding-top: 15px;
+  padding-left: 22px;
+  min-height: 142px;
+  background-color: #f2f2f2;
+  border: 0;
+}
+
+.emotions__text::-webkit-input-placeholder {
+  font-size: @title-size;
+  line-height: @text-height;
+  color: #000000;
+  font-weight: @title-weight;
+}
+
+.emotions__text:-ms-input-placeholder {
+  font-size: @title-size;
+  line-height: @text-height;
+  color: #000000;
+  font-weight: @title-weight;
+}
+
+.emotions__text::-ms-input-placeholder {
+  font-size: @title-size;
+  line-height: @text-height;
+  color: #000000;
+  font-weight: @title-weight;
+}
+
+.emotions__text::placeholder {
+  font-size: @title-size;
+  line-height: @text-height;
+  color: #000000;
+  font-weight: @title-weight;
+}
+
+@media (min-width: @tablet-width) {
+  .emotions {
+    display: flex;
+    position: relative;
+    margin-top: 17px;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+    padding-left: 0;
+    min-width: 648px;
+  }
+
+  .emotions__title {
+    padding-bottom: 58px;
+    font-size: 21px;
+  }
+
+  .emotions__title::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .emotions__title::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 125px;
+    height: 1px;
+    background-color: #dbdbdb;
+  }
+
+  .emotions__text {
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions {
+    min-width: 960px;
+  }
+
+  .emotions__title::before,
+  .emotions__title::after {
+    width: 280px;
+  }
+
+  .emotions__text {
+    padding-bottom: 7px;
+  }
+}

@@ -1,133 +1,18 @@
-.multimedia {
-  display: flex;
-  flex-direction: column;
-}
-
-.multimedia__photo-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.multimedia__photo-author {
-  padding: 0;
-  margin: 0;
-  line-height: 24px;
-  text-transform: none;
-}
-
-.multimedia__title {
-  padding: 0;
-  margin: 0;
-  padding-top: 38px;
-  padding-bottom: 25px;
-  padding-right: 50px;
-  padding-left: 50px;
-  font-size: @title-size;
-  text-align: center;
-}
-
-.multimedia__text {
-  padding: 0;
-  margin: 0;
-  padding-bottom: 28px;
-  padding-right: 7.5%;
-  padding-left: 7.5%;
-  line-height: 24px;
-  text-align: center;
-  box-shadow: 0 1px 0 0 #e5e5e5;
-}
-
 .photo-list__item {
   box-shadow: 0 1px 0 0 #e5e5e5;
 }
 
 .photo-list__item-container {
-  padding: 0;
   margin: 0;
+  padding: 0;
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.multimedia__image-sunset {
-  width: 100%;
-  height: 280px;
-}
-
-.multimedia__image {
-  width: 100%;
-  height: 280px;
-}
-
-.multimedia__image-container {
-  padding: 0;
-  margin: 0;
-  padding-top: 22px;
-  padding-bottom: 5px;
-}
-
-.photo-description__container {
-  padding-top: 2px;
-  padding-bottom: 5px;
-}
-
-.multimedia__photo-title {
-  padding-bottom: 12px;
-  font-weight: @title-weight;
-  line-height: 24px;
-}
-
-.multimedia__photo-description {
-  padding-bottom: 17px;
-}
-
-.main-description {
-  padding-bottom: 15px;
-}
-
-.item-rating__button {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.item-rating__number {
-  padding-left: 10px;
-  font-weight: @title-weight;
-  line-height: 24px;
-}
-
 @media (min-width: @tablet-width) {
-  .multimedia {
-    width: auto;
-    margin: 0;
-  }
-
-  .multimedia__wrapper {
-    width: 648px;
-    margin: 0 auto;
-  }
-
-  .multimedia__title {
-    padding-top: 73px;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 26px;
-    text-align: center;
-  }
-
-  .multimedia__text {
-    width: 440px;
-    margin: 0 auto;
-    padding-top: 5px;
-    padding-bottom: 68px;
-    text-align: center;
-    box-shadow: none;
-  }
-
   .photo-list__item {
-    background-color: #f2f2f2;
     flex-basis: 50%;
+    background-color: #f2f2f2;
     box-shadow: none;
   }
 
@@ -139,134 +24,21 @@
     padding-top: 12px;
   }
 
-  .vast-item {
+  .photo-list__item-container--vast {
     width: 100%;
   }
 
-  .multimedia__image-container {
-    padding: 0;
-  }
-
-  .multimedia__image-sunset {
-    height: 401px;
-  }
-
-  .multimedia__photo-description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 8px;
-    padding-right: 3%;
-    padding-left: 3%;
-  }
-
-  .less-item:nth-child(even) {
+  .photo-list__item--less:nth-child(even) {
     background-color: #eaeaea;
-  }
-
-  .less-description {
-    padding-right: 9%;
-    padding-left: 6%;
-  }
-
-  .north-road__description {
-    padding-right: 11%;
-  }
-
-  .photo-description__container {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .item-rating__number {
-    padding-left: 6px;
-  }
-
-  .multimedia__photo-title {
-    padding-bottom: 0;
-  }
-
-  .other-photo {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .other-items {
-    height: 267px;
-  }
-
-  .multimedia__image {
-    width: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .multimedia {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .multimedia__wrapper {
-    width: 100%;
-  }
-
   .photo-list__item {
     flex-basis: 33.33333%;
   }
 
-  .multimedia__title {
-    padding-top: 110px;
-  }
-
-  .multimedia__text {
-    padding-bottom: 73px;
-  }
-
-  .sunset-image__container {
-    height: 432px;
-  }
-
-  .multimedia__image {
-    width: 100%;
-  }
-
   .photo-list__item-container {
     margin-right: -0.11111%;
-  }
-
-  .multimedia__photo-description {
-    margin-top: -105px;
-    padding-right: 2%;
-    padding-left: 2%;
-    background-color: transparent;
-  }
-
-  .less-description {
-    margin-top: -80px;
-    padding-right: 8%;
-    padding-left: 5%;
-  }
-
-  .north-road__description {
-    padding-right: 10%;
-    padding-left: 6%;
-  }
-
-  .devil-bridge__description {
-    padding-right: 7%;
-    padding-left: 6%;
-  }
-
-  .multimedia__photo-title,
-  .multimedia__photo-author,
-  .item-rating__number {
-    color: @nav-color;
-  }
-
-  .item-rating__picture {
-    fill: #ffffff;
   }
 }

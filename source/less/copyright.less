@@ -1,4 +1,4 @@
-.page-footer__copyright {
+.copyright {
   display: flex;
   flex-direction: row;
   padding-bottom: 23px;
@@ -14,15 +14,23 @@
 .copyright__link {
   display: inline-block;
   margin-left: 10px;
-  background-image: url("../img/htmlacademy.svg");
   width: 40px;
   height: 40px;
+  background-image: url("../img/htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+.copyright__link-icon:hover {
+  fill: #81b3d2;
+}
+
+.copyright__link-icon:active {
+  fill: #b2b2b2;
+}
+
 @media (min-width: @tablet-width) {
-  .page-footer__copyright {
+  .copyright {
     display: flex;
     flex-direction: row;
     padding: 0;
