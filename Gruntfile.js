@@ -54,10 +54,11 @@ module.exports = function(grunt) {
           require("posthtml-include")()
         ]
       },
-      html: {
+      build: {
         files: [{
           expand: true,
-          src: ["source/*.html"],
+          cwd: "source",
+          src: ["*.html"],
           dest: "build"
         }]
       }
@@ -78,7 +79,7 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "build/source/*.html",
+            "build/*.html",
             "build/css/*.css",
             "build/js/*.js"
           ]
