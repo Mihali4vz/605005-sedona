@@ -30,7 +30,7 @@
 .page-header__top::after {
   content: "";
   position: absolute;
-  top: 420px;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 26.111px;
@@ -44,7 +44,7 @@
 .page-header__top--photo::after {
   content: "";
   position: absolute;
-  top: 189px;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 26.111px;
@@ -92,12 +92,12 @@
 
 @media (min-width: @tablet-width) {
   .page-header__top {
-    position: static;
     height: 515px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 100% 520px;
     background-repeat: no-repeat;
     background-position: 100%;
+    background-color: #9abed8;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -118,14 +118,12 @@
   }
 
   .page-header__top::after {
-    top: 517px;
     height: 57px;
     background-image: url("../img/bg-intro-triangle-tablet.svg");
     background-size: 156% 57px;
   }
 
   .page-header__top--photo::after {
-    top: 292px;
     height: 57px;
     background-image: url("../img/bg-intro-triangle-tablet.svg");
     background-size: 156% 57px;
@@ -176,7 +174,6 @@
   }
 
   .page-header__top--photo::after {
-    top: 302px;
     background-image: url("../img/bg-intro-triangle-desktop.svg");
     background-size: auto 57px;
   }

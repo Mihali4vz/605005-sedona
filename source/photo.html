@@ -5,6 +5,8 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.min.js"></script>
   </head>
@@ -18,7 +20,7 @@
               <button class="main-nav__button main-nav__button--hide" type="button" aria-label="Выход"></button>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фото и видео</a>
+              <a class="main-nav__link main-nav__link--active" href="photo.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Форма отзыва</a>
@@ -31,7 +33,8 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="./img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="./img/logo-sedona-tablet.svg">
-              <img class="main-nav__logo-image" src="./img/logo-sedona-mobile.svg" width="104" height="85" alt="Городок Седона">
+              <source media="(min-width: 320px)" srcset="./img/logo-sedona-mobile.svg">
+              <img class="main-nav__logo-image" src="./img/logo-sedona-desktop.svg" width="186" height="96" alt="Городок Седона">
             </picture>
           </a>
         </div>
@@ -52,13 +55,14 @@
               <ul class="multimedia__photo-list photo-list">
                 <li class="photo-list__item">
                   <figure class="photo-list__item-container photo-list__item-container--vast">
-                    <p class="multimedia__image-container multimedia__image-container--sunset">
+                    <a class="multimedia__image-container multimedia__image-container--sunset" href="#">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="./img/photo-sunset-desktop@1x.jpg 1x, ./img/photo-sunset-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="./img/photo-sunset-tablet@1x.jpg 1x, ./img/photo-sunset-tablet@2x.jpg 2x">
-                        <img class="multimedia__image-sunset" src="./img/photo-sunset-mobile@1x.jpg" srcset="./img/photo-sunset-mobile@2x.jpg 2x" alt="Неродные просторы">
+                        <source media="(min-width: 320px)" srcset="./img/photo-sunset-mobile@1x.jpg 1x, ./img/photo-sunset-mobile@2x.jpg 2x">
+                        <img class="multimedia__image-sunset" src="./img/photo-sunset-desktop@1x.jpg" srcset="./img/photo-sunset-desktop@2x.jpg 2x" alt="Неродные просторы">
                       </picture>
-                    </p>
+                    </a>
                     <figcaption class="multimedia__description multimedia__description--main">
                       <div class="multimedia__description-container">
                         <b class="multimedia__photo-title">Неродные просторы</b>
@@ -77,13 +81,14 @@
               <ul class="multimedia__photo-list photo-list multimedia__photo-list--other">
                 <li class="photo-list__item photo-list__item--less">
                   <figure class="photo-list__item-container">
-                    <p class="multimedia__image-container">
+                    <a class="multimedia__image-container" href="#">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="./img/photo-cactus-desktop@1x.jpg 1x, ./img/photo-cactus-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="./img/photo-cactus-tablet@1x.jpg 1x, ./img/photo-cactus-tablet@2x.jpg 2x">
-                        <img class="multimedia__image multimedia__image--other" src="./img/photo-cactus-mobile@1x.jpg" srcset="./img/photo-cactus-mobile@2x.jpg 2x" alt="Местная растительность">
+                        <source media="(min-width: 320px)" srcset="./img/photo-cactus-mobile@1x.jpg 1x, ./img/photo-cactus-mobile@2x.jpg 2x">
+                        <img class="multimedia__image multimedia__image--other" src="./img/photo-cactus-desktop@1x.jpg" srcset="./img/photo-cactus-desktop@2x.jpg 2x" alt="Местная растительность">
                       </picture>
-                    </p>
+                    </a>
                     <figcaption class="multimedia__description multimedia__description--less">
                       <div class="multimedia__description-container">
                         <b class="multimedia__photo-title">Местная растительность</b>
@@ -100,13 +105,14 @@
                 </li>
                 <li class="photo-list__item photo-list__item--less">
                   <figure class="photo-list__item-container">
-                    <p class="multimedia__image-container">
+                    <a class="multimedia__image-container" href="#">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="./img/photo-roads-desktop@1x.jpg 1x, ./img/photo-roads-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="./img/photo-roads-tablet@1x.jpg 1x, ./img/photo-roads-tablet@2x.jpg 2x">
-                        <img class="multimedia__image multimedia__image--other" src="./img/photo-roads-mobile@1x.jpg" srcset="./img/photo-roads-mobile@2x.jpg 2x" alt="Дорога на север">
+                        <source media="(min-width: 320px)" srcset="./img/photo-roads-mobile@1x.jpg 1x, ./img/photo-roads-mobile@2x.jpg 2x">
+                        <img class="multimedia__image multimedia__image--other" src="./img/photo-roads-desktop@1x.jpg" srcset="./img/photo-roads-desktop@2x.jpg 2x" alt="Дорога на север">
                       </picture>
-                    </p>
+                    </a>
                     <figcaption class="multimedia__description multimedia__description--less multimedia__description--north">
                       <div class="multimedia__description-container">
                         <b class="multimedia__photo-title">Дорога на север</b>
@@ -123,13 +129,14 @@
                 </li>
                 <li class="photo-list__item photo-list__item--less">
                   <figure class="photo-list__item-container">
-                    <p class="multimedia__image-container">
+                    <a class="multimedia__image-container" href="#">
                       <picture>
                         <source media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
-                        <img class="multimedia__image multimedia__image--other" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+                        <source media="(min-width: 320px)" srcset="./img/photo-bridge-mobile@1x.jpg 1x, ./img/photo-bridge-mobile@2x.jpg 2x">
+                        <img class="multimedia__image multimedia__image--other" src="./img/photo-bridge-desktop@1x.jpg" srcset="./img/photo-bridge-desktop@2x.jpg 2x" alt="Мост дьявола">
                       </picture>
-                    </p>
+                    </a>
                     <figcaption class="multimedia__description multimedia__description--less multimedia__description--devil">
                       <div class="multimedia__description-container">
                         <b class="multimedia__photo-title">Мост дьявола</b>
@@ -154,7 +161,8 @@
                 <picture class="video__image">
                   <source media="(min-width: 1200px)" srcset="./img/video-desktop@1x.jpg 1x, ./img/video-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/video-tablet@1x.jpg 1x, ./img/video-tablet@2x.jpg 2x">
-                  <img class="video__dummy" src="./img/video-mobile@1x.jpg" srcset="./img/video-mobile@2x.jpg 2x" alt="Видео Седоны">
+                  <source media="(min-width: 320px)" srcset="./img/video-mobile@1x.jpg 1x, ./img/video-mobile@2x.jpg 2x">
+                  <img class="video__dummy" src="./img/video-desktop@1x.jpg" srcset="./img/video-desktop@2x.jpg 2x" alt="Видео Седоны">
                 </picture>
                 <div class="video__interface">
                   <div class="video__scale">
@@ -184,16 +192,19 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social-links social__link--twitter" href="#">
+                <span class="visually-hidden">Твиттер</span>
                 <svg class="social-links__icons" width="17.5" height="14.663" fill="#fff"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"/></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social-links social__link--facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
                 <svg class="social-links__icons" width="8.672" height="18.944" fill="#fff"><path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social-links social__link--youtube" href="#">
+                <span class="visually-hidden">Ютуб</span>
                 <svg class="social-links__icons" width="19.979" height="14.015" fill="#fff"><path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/></svg>
               </a>
             </li>
